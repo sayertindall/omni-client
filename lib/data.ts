@@ -78,7 +78,7 @@ export const feedbackData = [
               applicability_reasoning:
                 "Applicable because the article is about a gene/protein.",
               score: 0.0,
-              confidence: 0.9,
+              confidence: 1.0,
               evidence: "The section lacks an infobox for the gene/protein.",
               reasoning:
                 "No infobox is included, which is essential for quickly summarizing key facts.",
@@ -90,7 +90,7 @@ export const feedbackData = [
               applicability_reasoning:
                 "Applicable when an infobox is relevant to summarize key facts.",
               score: 0.0,
-              confidence: 0.9,
+              confidence: 1.0,
               evidence: "No infobox is present in the section.",
               reasoning:
                 "The absence of an infobox means the requirement for summarizing key facts is unmet.",
@@ -102,7 +102,7 @@ export const feedbackData = [
               applicability_reasoning:
                 "Always applicable as the article discusses a gene/protein.",
               score: 0.0,
-              confidence: 0.9,
+              confidence: 1.0,
               evidence: "No infobox is included at the top of the article.",
               reasoning:
                 "The article does not comply with the imperative standard of including an infobox.",
@@ -597,7 +597,7 @@ export const feedbackData = [
               applicable: true,
               applicability_reasoning: "Gene symbols should be italicized.",
               score: 0.0,
-              confidence: 0.9,
+              confidence: 1.0,
               evidence:
                 "The gene symbol ABCC11 is not italicized in the section.",
               reasoning:
@@ -625,7 +625,7 @@ export const feedbackData = [
               applicability_reasoning:
                 "Bullet points improve readability when listing items or points.",
               score: 0.0,
-              confidence: 0.85,
+              confidence: 1.0,
               evidence:
                 "The section uses paragraphs to list protein features without bullet points.",
               reasoning:
@@ -882,7 +882,7 @@ export const feedbackData = [
               applicability_reasoning:
                 "The section contains diverse but related topics that would benefit from subheading organization.",
               score: 0.0,
-              confidence: 0.9,
+              confidence: 1.0,
               evidence:
                 "No use of subheadings to separate different functional aspects of the protein.",
               reasoning:
@@ -1005,7 +1005,7 @@ export const feedbackData = [
               applicability_reasoning:
                 "The gene has a human ortholog, making this requirement relevant to the infobox considerations for summarizing human-related genetic information.",
               score: 0.0,
-              confidence: 0.65,
+              confidence: 1.0,
               evidence:
                 "The section fails to mention or link to an Infobox GNF protein, missing a direct application of this particular infobox.",
               reasoning:
@@ -1546,7 +1546,7 @@ export const feedbackData = [
               applicability_reasoning:
                 "The content discusses ABCC11, which is a gene/protein article requiring an infobox.",
               score: 0.0,
-              confidence: 0.9,
+              confidence: 1.0,
               evidence:
                 "There is no infobox present in this section about ABCC11.",
               reasoning:
@@ -1559,7 +1559,7 @@ export const feedbackData = [
               applicability_reasoning:
                 "Applicable to provide a summarized format of key facts including those pertaining to interactions.",
               score: 0.0,
-              confidence: 0.9,
+              confidence: 1.0,
               evidence:
                 "The absence of an infobox leaves key facts about interactions unsummarized.",
               reasoning:
@@ -1581,7 +1581,7 @@ export const feedbackData = [
               applicability_reasoning:
                 "Applicable because the section discusses ABCC11, which is a gene symbol and should be italicized according to the formatting requirement.",
               score: 0.0,
-              confidence: 0.95,
+              confidence: 1.0,
               evidence:
                 "No instances of italicization of the gene symbol ABCC11 are present in the text.",
               reasoning:
@@ -1776,7 +1776,7 @@ export const feedbackData = [
               applicability_reasoning:
                 "Specific claims regarding interactions with ATP and cyclic nucleotides require direct evidence through inline citations.",
               score: 0.0,
-              confidence: 0.75,
+              confidence: 1.0,
               evidence:
                 "No inline citations are used for specific claims within the section.",
               reasoning:
@@ -2014,7 +2014,7 @@ export const feedbackData = [
               applicability_reasoning:
                 "Applicable because references should use proper gene abbreviations as per HUGO Gene Nomenclature Committee guidelines.",
               score: 0.0,
-              confidence: 0.9,
+              confidence: 1.0,
               evidence:
                 "The references do not show gene abbreviations in italic, which is required by HUGO Gene Nomenclature Committee guidelines.",
               reasoning:

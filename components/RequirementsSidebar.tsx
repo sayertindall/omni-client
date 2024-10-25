@@ -124,7 +124,7 @@ const Requirement = ({ requirement }: RequirementProps) => (
   </HoverCard>
 );
 
-const RequirementsSidebar = ({ groups }: RequirementsSidebarProps) => {
+export const RequirementsSidebar = ({ groups }: RequirementsSidebarProps) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedClassification, setSelectedClassification] = useState<
     string | null
@@ -278,5 +278,3 @@ const RequirementsSidebar = ({ groups }: RequirementsSidebarProps) => {
     </div>
   );
 };
-
-export default RequirementsSidebar;
