@@ -38,3 +38,15 @@ export interface RequirementsSidebarProps {
 export interface RequirementProps {
   requirement: Requirement;
 }
+
+export interface Section {
+  title: string;
+  content: string;
+  hierarchy: string;
+  citations?: Citation[];
+}
+
+export interface Citation {
+  citation: string;
+  link: string;
+}
