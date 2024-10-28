@@ -9,18 +9,6 @@ const getDataFilePath = (
   filePath: string,
   extension: string
 ) => {
-  // In development, use the local filesystem
-  if (process.env.NODE_ENV === "development") {
-    return path.join(
-      process.cwd(),
-      "public",
-      "data",
-      type,
-      `${filePath}.${extension}`
-    );
-  }
-
-  // In production (Vercel), use the public directory
   return path.join(
     process.cwd(),
     "public",

@@ -39,8 +39,6 @@ The amount of volatile organic compounds (VOCs) in ear wax was found to be relat
 
 ### Citations
 
-Here are the remaining citations converted to the requested format:
-
 [1. (GRCh38) GRCh38: Ensembl release 89: ENSG00000121270 - Ensembl, May 2017. URL: http://May2017.archive.ensembl.org/Homo_sapiens/Gene/Summary?db=core;g=ENSG00000121270](http://May2017.archive.ensembl.org/Homo_sapiens/Gene/Summary?db=core;g=ENSG00000121270)
 
 [2. (HumanPubMedReference) "Human PubMed Reference:". National Center for Biotechnology Information, U.S. National Library of Medicine. URL: https://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&cmd=Link&LinkName=gene_pubmed&from_uid=85320](https://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&cmd=Link&LinkName=gene_pubmed&from_uid=85320)

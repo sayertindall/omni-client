@@ -25,22 +25,40 @@ export interface RequirementGroup {
 // Full requirements index
 export interface RequirementsIndex {
   groups: {
-    [key: string]: RequirementGroup;
+    [key: string]: Requirement[]; // Updated to reflect the new structure
   };
 }
 
 // Props for the sidebar component
 export interface RequirementsSidebarProps {
   groups: RequirementsIndex["groups"];
-  onFilterChange: (
-    searchQuery: string,
-    classification: RequirementClassification | null
-  ) => void;
 }
 
 // Rest of your types remain the same...
 export interface RequirementProps {
   requirement: Requirement;
+}
+
+export interface Requirement {
+  id: string;
+  description: string;
+  reference?: string;
+  classification: RequirementClassification;
+  category: string;
+  where: string;
+  when: string;
+}
+
+// Full requirements index - updated to match actual data structure
+export interface RequirementsIndex {
+  groups: {
+    [key: string]: Requirement[]; // Changed from RequirementGroup to Requirement[]
+  };
+}
+
+// Props for the sidebar component - updated to match actual usage
+export interface RequirementsSidebarProps {
+  groups: RequirementsIndex["groups"];
 }
 
 export interface Section {

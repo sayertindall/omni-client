@@ -16,8 +16,6 @@ Fusion of this gene and FUS on chromosome 16 or EWSR1 on chromosome 22 induced b
 
 ## References
 
-Here are the references converted to the requested format:
-
 [1. (GRCh38) GRCh38: Ensembl release 89: ENSG00000123268 - Ensembl, May 2017](http://may2017.archive.ensembl.org/Homo_sapiens/Gene/Summary?db=core;g=ENSG00000123268)
 
 [2. (HumanPubMedReference) "Human PubMed Reference:". National Center for Biotechnology Information, U.S. National Library of Medicine.](https://www.ncbi.nlm.nih.gov/gene/466)
