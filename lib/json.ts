@@ -4,27 +4,35 @@ import { marked } from "marked";
 import { Section } from "./types";
 import { processRefs } from "./utils";
 
-// Helper function to get the correct base directory
-const getBaseDir = () => {
-  // Check if we're in Vercel production
-  if (process.env.VERCEL) {
-    return path.join(process.cwd());
+const getDataFilePath = (
+  type: "articles" | "results",
+  filePath: string,
+  extension: string
+) => {
+  // In development, use the local filesystem
+  if (process.env.NODE_ENV === "development") {
+    return path.join(
+      process.cwd(),
+      "public",
+      "data",
+      type,
+      `${filePath}.${extension}`
+    );
   }
-  // Local development
-  return process.cwd();
+
+  // In production (Vercel), use the public directory
+  return path.join(
+    process.cwd(),
+    "public",
+    "data",
+    type,
+    `${filePath}.${extension}`
+  );
 };
 
 export async function getData(filePath: string): Promise<{ data: any | null }> {
   try {
-    const baseDir = getBaseDir();
-    const fullPath = path.join(
-      baseDir,
-      "lib",
-      "data",
-      "results",
-      `${filePath}.json`
-    );
-
+    const fullPath = getDataFilePath("results", filePath, "json");
     const jsonData = await fs.readFile(fullPath, "utf8");
     return { data: JSON.parse(jsonData) };
   } catch (error) {
@@ -38,20 +46,11 @@ export async function getData(filePath: string): Promise<{ data: any | null }> {
 export async function parseWikicrow(
   filePath: string
 ): Promise<{ data: Section[] }> {
-  const baseDir = getBaseDir();
-  const fullPath = path.join(
-    baseDir,
-    "lib",
-    "data",
-    "articles",
-    `${filePath}.md`
-  );
-
+  const fullPath = getDataFilePath("articles", filePath, "md");
   const markdownText = await fs.readFile(fullPath, "utf-8");
 
-  // Use marked to parse the markdown
+  // Rest of the parseWikicrow function remains the same
   const tokens = marked.lexer(markdownText);
-
   const structuredData: Section[] = [];
   let currentHierarchy: string[] = [];
   let currentSection: Section | null = null;
@@ -88,18 +87,11 @@ export async function parseWikicrow(
 export async function parseeWikicrow(
   filePath: string
 ): Promise<{ data: Section[] }> {
-  const baseDir = getBaseDir();
-  const fullPath = path.join(
-    baseDir,
-    "lib",
-    "data",
-    "articles",
-    `${filePath}.md`
-  );
-
+  const fullPath = getDataFilePath("articles", filePath, "md");
   const markdownText = await fs.readFile(fullPath, "utf-8");
   const lines = markdownText.split("\n");
 
+  // Rest of the parseeWikicrow function remains the same
   const rootTitle = lines[0].replace(/^#+\s*/, "").trim();
   const sectionPattern = /^(#+)\s*(.*?)\s*$/;
 
@@ -108,7 +100,6 @@ export async function parseeWikicrow(
   let currentTitle = rootTitle;
   let currentContent = "";
 
-  // Start with the root section
   structuredData.push({
     title: currentTitle,
     content: "",
@@ -181,12 +172,11 @@ export async function parseeWikicrow(
 export const parseWikipediaReferences = (
   input: string
 ): { citation: string; link: string }[] => {
+  // ... existing implementation remains the same ...
   const pattern = /\[(\d+)\] ([^()]+) \((https?:\/\/[^\s]+)\)/g;
-
   const results: { id: string; text: string; url: string }[] = [];
   let match: RegExpExecArray | null;
 
-  // Extract each match and store it in the results array
   while ((match = pattern.exec(input)) !== null) {
     const id = match[1];
     const text = match[2].trim();
@@ -202,9 +192,7 @@ export const parseWikipediaReferences = (
     .map((reference) => {
       const linkMatch = reference.match(/\((https?:\/\/[^\s)]+)\)/);
       const link = linkMatch ? linkMatch[1] : "";
-
       const citation = reference.replace(/\s*\(https?:\/\/[^\s)]+\)\s*$/, "");
-
       return {
         citation: citation.trim(),
         link: link,
