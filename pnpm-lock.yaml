@@ -119,6 +119,9 @@ dependencies:
   embla-carousel-react:
     specifier: ^8.3.0
     version: 8.3.0(react@18.3.1)
+  html-parse-string:
+    specifier: ^0.0.9
+    version: 0.0.9
   input-otp:
     specifier: ^1.2.4
     version: 1.2.4(react-dom@18.3.1)(react@18.3.1)
@@ -4924,6 +4927,10 @@ packages:
       hast-util-parse-selector: 3.1.1
       property-information: 6.5.0
       space-separated-tokens: 2.0.2
+    dev: false
+
+  /html-parse-string@0.0.9:
+    resolution: {integrity: sha512-wyGnsOolHbNrcb8N6bdJF4EHyzd3zVGCb9/mBxeNjAYBDOZqD7YkqLBz7kXtdgHwNnV8lN/BpSDpsI1zm8Sd8g==}
     dev: false
 
   /html-url-attributes@3.0.1:

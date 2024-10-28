@@ -32,9 +32,13 @@ export interface RequirementsIndex {
 // Props for the sidebar component
 export interface RequirementsSidebarProps {
   groups: RequirementsIndex["groups"];
+  onFilterChange: (
+    searchQuery: string,
+    classification: RequirementClassification | null
+  ) => void;
 }
 
-// Props for the requirement component
+// Rest of your types remain the same...
 export interface RequirementProps {
   requirement: Requirement;
 }
@@ -49,4 +53,45 @@ export interface Section {
 export interface Citation {
   citation: string;
   link: string;
+}
+
+export interface RequirementEvaluation {
+  requirement_id: string;
+  applicable: boolean;
+  applicability_reasoning: string;
+  score: number;
+  confidence: number;
+  evidence: string;
+  reasoning: string;
+  overlap_notes: string;
+}
+
+export interface FeedbackCategory {
+  title: string;
+  requirement_evaluations: RequirementEvaluation[];
+  meta_notes: string;
+}
+
+export interface Feedback {
+  [category: string]: FeedbackCategory[];
+}
+
+export interface ArticleSection {
+  title: string;
+  content: string;
+  hierarchy: string;
+  feedback: Feedback;
+  citations?: { citation: string; link: string }[];
+}
+
+export interface CategoryScore {
+  score: number;
+  lastCalculated: Date;
+  evaluations: RequirementEvaluation[];
+}
+
+export interface SectionState {
+  isExpanded: boolean;
+  lastViewed: Date;
+  scores: Record<string, CategoryScore>;
 }

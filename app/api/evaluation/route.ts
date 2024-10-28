@@ -13,7 +13,6 @@ export async function GET(request: Request) {
   }
 
   const { data } = await getData(filePath);
-  console.log(data);
 
   if (data === null) {
     return NextResponse.json({ error: "File not found" }, { status: 404 });

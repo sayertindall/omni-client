@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Card,
   CardContent,
@@ -24,42 +25,64 @@ import {
 } from "@/components/ui/tooltip";
 import { AlertCircle, CheckCircle, Info, HelpCircle } from "lucide-react";
 import { requirementsData } from "@/lib/data";
+import {
+  CategoryScore,
+  Feedback,
+  RequirementEvaluation,
+  SectionState,
+} from "@/lib/types";
 
-export const SectionFeedback = ({ feedback }) => {
-  const getScoreBadgeVariant = (score) => {
+interface SectionFeedbackProps {
+  feedback: Feedback;
+  sectionState: SectionState;
+  onRequirementSelect: (requirementId: string, category: string) => void;
+  selectedRequirements: Set<string>;
+  onScoreUpdate: (category: string, score: CategoryScore) => void;
+}
+
+export const SectionFeedback: React.FC<SectionFeedbackProps> = ({
+  feedback,
+  sectionState,
+  onRequirementSelect,
+  selectedRequirements,
+  onScoreUpdate,
+}) => {
+  const calculateCategoryScore = (
+    category: string,
+    evaluations: RequirementEvaluation[]
+  ) => {
+    // Check if we have a cached score that's less than 5 seconds old
+    const cachedScore = sectionState.scores[category];
+    if (
+      cachedScore &&
+      new Date().getTime() - cachedScore.lastCalculated.getTime() < 5000
+    ) {
+      return cachedScore.score;
+    }
+
+    // Calculate new score
+    if (!evaluations.length) return 0;
+    const scores = evaluations.map((req) => req.score);
+    const average = scores.reduce((acc, curr) => acc + curr, 0) / scores.length;
+
+    // Cache the new score
+    const newScore = {
+      score: average,
+      lastCalculated: new Date(),
+      evaluations,
+    };
+    onScoreUpdate(category, newScore);
+
+    return average;
+  };
+
+  const getScoreBadgeVariant = (score: number) => {
     if (score >= 0.8) return "secondary";
     if (score >= 0.6) return "outline";
     return "destructive";
   };
 
-  const calculateCategoryScore = (evaluations) => {
-    if (!evaluations.length) return 0;
-    const scores = evaluations.map((req) => req.score);
-    const average = scores.reduce((acc, curr) => acc + curr, 0) / scores.length;
-    console.log("AVERAGE: ", average);
-    return average;
-  };
-
-  console.log((0.95 * 100).toFixed(1));
-
-  const getRequirement = (
-    category: string,
-    requirementId: string
-  ): string | undefined => {
-    const group = requirementsData.groups[category];
-
-    if (!group) {
-      return undefined;
-    }
-
-    const req = group.requirements.find((req) => req.id === requirementId);
-
-    return;
-  };
-
-  if (!feedback) {
-    return;
-  }
+  if (!feedback) return null;
 
   return (
     <Card className="w-full">
@@ -88,8 +111,7 @@ export const SectionFeedback = ({ feedback }) => {
             {Object.entries(feedback)
               .sort(([a], [b]) => a.localeCompare(b))
               .map(([category, categoryData]) => {
-                // Calculate total evaluations for this category
-                const evaluationCount = (categoryData as any).reduce(
+                const evaluationCount = categoryData.reduce(
                   (acc, section) =>
                     acc + section.requirement_evaluations.length,
                   0
@@ -116,7 +138,7 @@ export const SectionFeedback = ({ feedback }) => {
           {Object.entries(feedback).map(([category, categoryData]) => (
             <TabsContent key={category} value={category.toLowerCase()}>
               <ScrollArea className="h-[calc(100vh-300px)] min-h-[400px] max-h-[600px] pr-4">
-                {(categoryData as any).map((section, sectionIndex) => (
+                {categoryData.map((section, sectionIndex) => (
                   <div key={sectionIndex} className="mb-6">
                     {section.meta_notes && (
                       <Alert className="mb-4">
@@ -134,18 +156,10 @@ export const SectionFeedback = ({ feedback }) => {
                           <AlertCircle className="h-4 w-4" />
                           <AlertTitle>Category Score</AlertTitle>
                           <AlertDescription className="mt-2">
-                            <p>
-                              Debug Score:{" "}
-                              {String(
-                                calculateCategoryScore(
-                                  section.requirement_evaluations
-                                )
-                              )}
-                            </p>
-
                             <Progress
                               value={
                                 calculateCategoryScore(
+                                  category,
                                   section.requirement_evaluations
                                 ) * 100
                               }
@@ -154,6 +168,7 @@ export const SectionFeedback = ({ feedback }) => {
                             <span className="text-sm text-gray-500 mt-1 block">
                               {(
                                 calculateCategoryScore(
+                                  category,
                                   section.requirement_evaluations
                                 ) * 100
                               ).toFixed(1)}
@@ -166,7 +181,18 @@ export const SectionFeedback = ({ feedback }) => {
 
                     <Accordion type="single" collapsible className="w-full">
                       {section.requirement_evaluations.map((req, index) => (
-                        <AccordionItem key={index} value={`item-${index}`}>
+                        <AccordionItem
+                          key={index}
+                          value={`item-${index}`}
+                          className={
+                            selectedRequirements.has(req.requirement_id)
+                              ? "ring-2 ring-blue-500"
+                              : ""
+                          }
+                          onClick={() =>
+                            onRequirementSelect(req.requirement_id, category)
+                          }
+                        >
                           <AccordionTrigger className="hover:no-underline">
                             <div className="flex items-center gap-2">
                               {req.score === 1.0 ? (
@@ -176,10 +202,7 @@ export const SectionFeedback = ({ feedback }) => {
                               ) : (
                                 <Info className="h-4 w-4 text-yellow-500" />
                               )}
-                              <span>
-                                Requirement{" "}
-                                {getRequirement(category, req.requirement_id)}
-                              </span>
+                              <span>Requirement {req.requirement_id}</span>
                               <Badge variant={getScoreBadgeVariant(req.score)}>
                                 {(req.score * 100).toFixed(0)}%
                               </Badge>

@@ -10,66 +10,143 @@ import { requirementsData } from "@/lib/data";
 import { GenerateCitations } from "./GenerateCitations";
 import useSWR from "swr";
 import { ArticleSelector } from "./ArticleSelector";
+import {
+  ArticleSection,
+  SectionState,
+  CategoryScore,
+  Feedback,
+  RequirementClassification,
+  RequirementEvaluation,
+} from "@/lib/types";
+import { ContentRenderer } from "./ContentRenderer";
 
-interface RequirementEvaluation {
-  requirement_id: string;
-  applicable: boolean;
-  applicability_reasoning: string;
-  score: number;
-  confidence: number;
-  evidence: string;
-  reasoning: string;
-  overlap_notes: string;
+interface SelectedRequirement {
+  id: string;
+  category: string;
 }
 
-interface FeedbackCategory {
-  title: string;
-  requirement_evaluations: RequirementEvaluation[];
-  meta_notes: string;
-}
-
-interface Feedback {
-  [category: string]: FeedbackCategory[];
-}
-
-interface ArticleSection {
-  title: string;
-  content: string;
-  hierarchy: string;
-  feedback: Feedback;
+interface FilterHistoryEntry {
+  searchQuery: string;
+  classification: RequirementClassification | null;
+  lastUsed: Date;
 }
 
 const MainContent = () => {
-  const [selectedPath, setSelectedPath] = useState("wikicrow/ABCC11");
-  const [article, setArticle] = useState<any>([]);
+  // Core state
+  const [selectedPath, setSelectedPath] = useState("");
+  const [article, setArticle] = useState<ArticleSection[]>([]);
   const [evaluation, setEvaluation] = useState<ArticleSection[]>([]);
-  const [feedback, setFeedback] = useState<Record<string, any>>();
   const [selectedSection, setSelectedSection] = useState<string | null>(null);
+  const [feedback, setFeedback] = useState<Feedback>();
+
+  // Enhanced state
+  const [selectedRequirements, setSelectedRequirements] = useState<
+    SelectedRequirement[]
+  >([]);
+  const [sectionStates, setSectionStates] = useState<
+    Record<string, SectionState>
+  >({});
+  const [categoryScores, setCategoryScores] = useState<
+    Record<string, CategoryScore>
+  >({});
+  const [filterHistory, setFilterHistory] = useState<FilterHistoryEntry[]>([]);
 
   const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
-  // Fetch evaluation data
   const { data: evaluationData, error: evaluationError } = useSWR(
     `/api/evaluation?path=${encodeURIComponent(selectedPath)}`,
     fetcher,
     { revalidateOnFocus: false, revalidateOnReconnect: false }
   );
 
-  // Fetch article data
   const { data: articleData, error: articleError } = useSWR(
     `/api/articles?path=${encodeURIComponent(selectedPath)}`,
     fetcher,
     { revalidateOnFocus: false, revalidateOnReconnect: false }
   );
 
-  // Update states when data changes
+  // Section state management
+  const toggleSection = (title: string) => {
+    setSectionStates((prev) => ({
+      ...prev,
+      [title]: {
+        isExpanded: !prev[title]?.isExpanded,
+        lastViewed: new Date(),
+        scores: prev[title]?.scores || {},
+      },
+    }));
+    setSelectedSection((prev) => (prev === title ? null : title));
+  };
+
+  // Requirement selection management
+  const toggleRequirement = (id: string, category: string) => {
+    setSelectedRequirements((prev) => {
+      const exists = prev.find((req) => req.id === id);
+      if (exists) {
+        return prev.filter((req) => req.id !== id);
+      }
+      return [...prev, { id, category }];
+    });
+  };
+
+  // Score management with caching
+  const updateCategoryScore = (
+    category: string,
+    evaluations: RequirementEvaluation[]
+  ) => {
+    const currentTime = new Date();
+    const cached = categoryScores[category];
+
+    if (
+      cached &&
+      currentTime.getTime() - cached.lastCalculated.getTime() < 5000
+    ) {
+      return cached.score;
+    }
+
+    const score =
+      evaluations.reduce((acc, evaluation) => acc + evaluation.score, 0) /
+      evaluations.length;
+
+    setCategoryScores((prev) => ({
+      ...prev,
+      [category]: {
+        score,
+        lastCalculated: currentTime,
+        evaluations,
+      },
+    }));
+
+    return score;
+  };
+
+  // Data initialization and updates
   useEffect(() => {
-    if (evaluationData) {
+    if (evaluationData?.data) {
+      // Add the optional chaining here
       const { data } = evaluationData;
-      console.log("EVAL: ", data);
       setEvaluation(data);
+
+      // Initialize or update section states
+      const newSectionStates: Record<string, SectionState> = {};
+      data.forEach((section: ArticleSection) => {
+        newSectionStates[section.title] = {
+          isExpanded: sectionStates[section.title]?.isExpanded || false,
+          lastViewed: new Date(),
+          scores: sectionStates[section.title]?.scores || {},
+        };
+      });
+      setSectionStates(newSectionStates);
     }
   }, [evaluationData]);
+
+  useEffect(() => {
+    if (articleData?.data) {
+      // Add the same check here for consistency
+      const { data } = articleData;
+      setArticle(data);
+    }
+  }, [articleData]);
 
   useEffect(() => {
     if (articleData) {
@@ -78,35 +155,40 @@ const MainContent = () => {
     }
   }, [articleData]);
 
-  const getFeedback = (title: string): Record<string, any> | null => {
-    const section = evaluation.find((item) => item && item.title === title);
-    console.log("SECTION: ", section);
-    return section ? section.feedback : null;
-  };
-
-  const handleArticleSelect = (source: string, acronym: string) => {
-    const newPath = `${source}/${acronym}`;
-    setSelectedPath(newPath);
-    setSelectedSection(null);
-    setFeedback(undefined);
-  };
-
+  // Feedback updates
   useEffect(() => {
-    console.log(evaluation);
     if (selectedSection && evaluation) {
-      const feedbackData = getFeedback(selectedSection);
-      console.log("feedbackData ", feedbackData);
-      if (feedbackData !== null) {
-        setFeedback(feedbackData);
+      const section = evaluation.find(
+        (item) => item?.title === selectedSection
+      );
+      if (section) {
+        setFeedback(section.feedback);
       }
     }
   }, [selectedSection, evaluation]);
 
-  const handleSectionClick = (title: string) => {
-    setSelectedSection((prevSection) => (prevSection === title ? null : title));
+  const handleArticleSelect = (source: string, acronym: string) => {
+    const newPath = `${source}/${acronym}`;
+    setSelectedPath(newPath);
+    // Preserve states but clear current section
+    setSelectedSection(null);
+    setFeedback(undefined);
   };
 
-  // Loading state
+  const handleFilterChange = (
+    searchQuery: string,
+    classification: RequirementClassification | null
+  ) => {
+    setFilterHistory((prev) => [
+      {
+        searchQuery,
+        classification,
+        lastUsed: new Date(),
+      },
+      ...prev.slice(0, 9), // Keep last 10 filters
+    ]);
+  };
+
   if (!articleData || !evaluationData) {
     return (
       <div className="flex items-center justify-center h-screen">
@@ -118,7 +200,6 @@ const MainContent = () => {
     );
   }
 
-  // Error state
   if (articleError || evaluationError) {
     return (
       <div className="flex items-center justify-center h-screen">
@@ -143,39 +224,64 @@ const MainContent = () => {
       </Card>
 
       {article &&
-        article.map(
-          (section, index) =>
-            (section.content !== "" ||
-              (section.citations && section.citations.length > 0)) && (
-              <Card key={index} className="mb-2">
-                <CardHeader
-                  className="flex flex-row items-center justify-between cursor-pointer"
-                  onClick={() => handleSectionClick(section.title)}
-                >
-                  <CardTitle>{section.title}</CardTitle>
-                  {selectedSection === section.title ? (
-                    <ChevronUp className="h-6 w-6" />
-                  ) : (
-                    <ChevronDown className="h-6 w-6" />
+        article.map((section, index) =>
+          section.content !== "" ||
+          (section.citations && section.citations.length > 0) ? (
+            <Card
+              key={index}
+              className={`mb-2 ${
+                selectedRequirements.some((req) =>
+                  section.content.toLowerCase().includes(req.id.toLowerCase())
+                )
+                  ? "ring-2 ring-blue-500"
+                  : ""
+              }`}
+            >
+              <CardHeader
+                className="flex flex-row items-center justify-between cursor-pointer"
+                onClick={() => toggleSection(section.title)}
+              >
+                <CardTitle>{section.title}</CardTitle>
+                {sectionStates[section.title]?.isExpanded ? (
+                  <ChevronUp className="h-6 w-6" />
+                ) : (
+                  <ChevronDown className="h-6 w-6" />
+                )}
+              </CardHeader>
+              <CardContent className="pb-0">
+                <div>
+                  {section.content && section.content.trim() !== "" && (
+                    <ContentRenderer content={section.content} />
                   )}
-                </CardHeader>
-                <CardContent className="pb-0">
-                  <div>
-                    {section.content && section.content.trim() !== "" && (
-                      <div className="mb-4 text-gray-700">
-                        {section.content}
-                      </div>
-                    )}
-                    {section.citations && section.citations.length > 0 && (
-                      <GenerateCitations citationsArray={section.citations} />
-                    )}
-                  </div>
-                  {selectedSection === section.title && feedback && (
-                    <SectionFeedback feedback={feedback} />
+                  {section.citations && section.citations.length > 0 && (
+                    <GenerateCitations citationsArray={section.citations} />
                   )}
-                </CardContent>
-              </Card>
-            )
+                </div>
+                {selectedSection === section.title && feedback && (
+                  <SectionFeedback
+                    feedback={feedback}
+                    sectionState={sectionStates[section.title]}
+                    selectedRequirements={
+                      new Set(selectedRequirements.map((r) => r.id))
+                    }
+                    onRequirementSelect={toggleRequirement}
+                    onScoreUpdate={(category, score) => {
+                      setSectionStates((prev) => ({
+                        ...prev,
+                        [section.title]: {
+                          ...prev[section.title],
+                          scores: {
+                            ...prev[section.title].scores,
+                            [category]: score,
+                          },
+                        },
+                      }));
+                    }}
+                  />
+                )}
+              </CardContent>
+            </Card>
+          ) : null
         )}
     </ScrollArea>
   );
