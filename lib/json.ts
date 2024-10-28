@@ -4,6 +4,8 @@ import { Section } from "./types";
 import { processRefs } from "./utils";
 
 export async function getData(path: string): Promise<{ data: any | null }> {
+  console.log("Current working directory data:", process.cwd());
+
   try {
     const jsonData = await fs.readFile(
       "lib/data/results/" + path + ".json",
@@ -22,6 +24,8 @@ export async function getData(path: string): Promise<{ data: any | null }> {
 export async function parseWikicrow(
   path: string
 ): Promise<{ data: Section[] }> {
+  console.log("Current working directory wikicrow:", process.cwd());
+
   const markdownText = await fs.readFile(
     "lib/data/articles/" + path + ".md",
     "utf-8"
@@ -177,8 +181,6 @@ export const parseWikipediaReferences = (
 
     results.push({ id, text, url });
   }
-
-  console.log(results);
 
   return input
     .split("\n")
