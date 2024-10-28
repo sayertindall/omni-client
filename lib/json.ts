@@ -1,17 +1,31 @@
 import fs from "fs/promises";
+import path from "path";
 import { marked } from "marked";
 import { Section } from "./types";
 import { processRefs } from "./utils";
 
-export async function getData(path: string): Promise<{ data: any | null }> {
-  console.log("Current working directory data:", process.cwd());
+// Helper function to get the correct base directory
+const getBaseDir = () => {
+  // Check if we're in Vercel production
+  if (process.env.VERCEL) {
+    return path.join(process.cwd());
+  }
+  // Local development
+  return process.cwd();
+};
 
+export async function getData(filePath: string): Promise<{ data: any | null }> {
   try {
-    const jsonData = await fs.readFile(
-      "lib/data/results/" + path + ".json",
-      "utf8"
+    const baseDir = getBaseDir();
+    const fullPath = path.join(
+      baseDir,
+      "lib",
+      "data",
+      "results",
+      `${filePath}.json`
     );
 
+    const jsonData = await fs.readFile(fullPath, "utf8");
     return { data: JSON.parse(jsonData) };
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === "ENOENT") {
@@ -22,14 +36,18 @@ export async function getData(path: string): Promise<{ data: any | null }> {
 }
 
 export async function parseWikicrow(
-  path: string
+  filePath: string
 ): Promise<{ data: Section[] }> {
-  console.log("Current working directory wikicrow:", process.cwd());
-
-  const markdownText = await fs.readFile(
-    "lib/data/articles/" + path + ".md",
-    "utf-8"
+  const baseDir = getBaseDir();
+  const fullPath = path.join(
+    baseDir,
+    "lib",
+    "data",
+    "articles",
+    `${filePath}.md`
   );
+
+  const markdownText = await fs.readFile(fullPath, "utf-8");
 
   // Use marked to parse the markdown
   const tokens = marked.lexer(markdownText);
@@ -64,20 +82,22 @@ export async function parseWikicrow(
     structuredData.push(currentSection);
   }
 
-  console.log(structuredData);
-
   return { data: structuredData };
-
-  // ... rest of the function (processing references, etc.) ...
 }
 
 export async function parseeWikicrow(
-  path: string
+  filePath: string
 ): Promise<{ data: Section[] }> {
-  const markdownText = await fs.readFile(
-    "lib/data/articles/" + path + ".md",
-    "utf-8"
+  const baseDir = getBaseDir();
+  const fullPath = path.join(
+    baseDir,
+    "lib",
+    "data",
+    "articles",
+    `${filePath}.md`
   );
+
+  const markdownText = await fs.readFile(fullPath, "utf-8");
   const lines = markdownText.split("\n");
 
   const rootTitle = lines[0].replace(/^#+\s*/, "").trim();
@@ -96,13 +116,10 @@ export async function parseeWikicrow(
   });
 
   for (const line of lines.slice(1)) {
-    // Skip the first line as it's the root title
     const sectionMatch = line.match(sectionPattern);
 
     if (sectionMatch) {
-      // If there's an ongoing section, save the current one
       if (currentContent || currentHierarchy.length > 1) {
-        // Only append if there's content or it's not top-level
         structuredData.push({
           title: currentTitle,
           content: currentContent.trim(),
@@ -110,11 +127,8 @@ export async function parseeWikicrow(
         });
       }
 
-      // New section detected, update the current title, hierarchy, and content
-      const level = sectionMatch[1].length; // Number of '#' indicates the level
+      const level = sectionMatch[1].length;
       currentTitle = sectionMatch[2].trim();
-
-      // Update hierarchy based on the level
       currentHierarchy = [
         ...currentHierarchy.slice(0, level - 1),
         currentTitle,
@@ -125,7 +139,6 @@ export async function parseeWikicrow(
     }
   }
 
-  // Append the last section if it has content or is not top-level
   if (currentContent || currentHierarchy.length > 1) {
     structuredData.push({
       title: currentTitle,
@@ -141,7 +154,7 @@ export async function parseeWikicrow(
         .slice(1)
         .filter((section) => section.content || section.hierarchy !== rootTitle)
         .map((section) => {
-          if (path.includes("wikicrow")) {
+          if (filePath.includes("wikicrow")) {
             if (section.title === "References" && section.content) {
               return {
                 ...section,
