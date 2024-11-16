@@ -1,0 +1,39 @@
+[
+  {
+    "title": "C5AR1",
+    "content": "",
+    "level": 1,
+    "index": 1,
+    "sentences": []
+  },
+  {
+    "title": "Lead",
+    "content": "The **C5a receptor** also known as **complement component 5a receptor 1** (**C5AR1**) or **CD88** (**C**luster of **D**ifferentiation **88**) is a [G protein-coupled receptor](https://en.wikipedia.org/wiki/G_protein-coupled_receptor) for [C5a](https://en.wikipedia.org/wiki/Complement_component_5a). It functions as a [complement receptor](https://en.wikipedia.org/wiki/Complement_receptor). C5a receptor 1 modulates inflammatory responses, obesity, development, and cancers. From a signaling transduction perspective, C5a receptor 1 activation is implicated in [\u03b2-arrestin2](https://en.wikipedia.org/wiki/Arrestin_beta_2) recruitment via [Rab5a](https://en.wikipedia.org/wiki/RAB5A), coupling of G\u03b1i proteins, ERK1/2 phosphorylation, calcium mobilization, and Rho activation leading to downstream functions, such as secretion of cytokines, [chemotaxis](https://en.wikipedia.org/wiki/Chemotaxis), and phagocytosis.",
+    "level": 2,
+    "index": 2,
+    "sentences": [
+      "The **C5a receptor** also known as **complement component 5a receptor 1** (**C5AR1**) or **CD88** (**C**luster of **D**ifferentiation **88**) is a [G protein-coupled receptor](https://en.wikipedia.org/wiki/G_protein-coupled_receptor) for [C5a](https://en.wikipedia.org/wiki/Complement_component_5a).",
+      "It functions as a [complement receptor](https://en.wikipedia.org/wiki/Complement_receptor).",
+      "C5a receptor 1 modulates inflammatory responses, obesity, development, and cancers.",
+      "From a signaling transduction perspective, C5a receptor 1 activation is implicated in [\u03b2-arrestin2](https://en.wikipedia.org/wiki/Arrestin_beta_2) recruitment via [Rab5a](https://en.wikipedia.org/wiki/RAB5A), coupling of G\u03b1i proteins, ERK1/2 phosphorylation, calcium mobilization, and Rho activation leading to downstream functions, such as secretion of cytokines, [chemotaxis](https://en.wikipedia.org/wiki/Chemotaxis), and phagocytosis."
+    ]
+  },
+  {
+    "title": "Cells",
+    "content": "The C5a receptor 1 is expressed on:\n\n- [Granulocytes](https://en.wikipedia.org/wiki/Granulocyte)\n- [Macrophages](https://en.wikipedia.org/wiki/Macrophage)\n- [Monocytes](https://en.wikipedia.org/wiki/Monocyte)\n- [Dendritic cells](https://en.wikipedia.org/wiki/Dendritic_cell)\n- Hepatoma-derived cell line [HepG2](https://en.wikipedia.org/wiki/HepG2)\n- [Astrocytes](https://en.wikipedia.org/wiki/Astrocyte)\n- [Microglia](https://en.wikipedia.org/wiki/Microglia)",
+    "level": 2,
+    "index": 3,
+    "sentences": [
+      "The C5a receptor 1 is expressed on:\n\n- [Granulocytes](https://en.wikipedia.org/wiki/Granulocyte)\n- [Macrophages](https://en.wikipedia.org/wiki/Macrophage)\n- [Monocytes](https://en.wikipedia.org/wiki/Monocyte)\n- [Dendritic cells](https://en.wikipedia.org/wiki/Dendritic_cell)\n- Hepatoma-derived cell line [HepG2](https://en.wikipedia.org/wiki/HepG2)\n- [Astrocytes](https://en.wikipedia.org/wiki/Astrocyte)\n- [Microglia](https://en.wikipedia.org/wiki/Microglia)"
+    ]
+  },
+  {
+    "title": "Agonist and antagonists",
+    "content": "Potent and selective [agonist](https://en.wikipedia.org/wiki/Agonist) and [antagonists](https://en.wikipedia.org/wiki/Receptor_antagonist) for C5a receptor 1 have been developed.",
+    "level": 2,
+    "index": 4,
+    "sentences": [
+      "Potent and selective [agonist](https://en.wikipedia.org/wiki/Agonist) and [antagonists](https://en.wikipedia.org/wiki/Receptor_antagonist) for C5a receptor 1 have been developed."
+    ]
+  }
+]

@@ -1,0 +1,1480 @@
+{
+  "sections": [
+    {
+      "index": 2,
+      "title": "Overview",
+      "sentence_evaluations": [
+        {
+          "index": 1,
+          "sentence": "The ABCC11 gene encodes the ATP binding cassette subfamily C member 11 protein, which is a transmembrane transporter belonging to the ATP-binding cassette (ABC) transporter family.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses a gene abbreviation 'ABCC11' and the full gene name.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene abbreviation 'ABCC11' and the full gene name are used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation and full name are not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because it involves mentioning a gene name.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Both the abbreviation 'ABCC11' and the full gene name are used.",
+              "reasoning": "Partial adherence; the abbreviation is used but the full gene name is included, which is acceptable but not preferred.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "The human gene 'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' and the full gene name to fully comply with formatting standards."
+        },
+        {
+          "index": 2,
+          "sentence": "This protein plays a critical role in the transport of various molecules across cellular membranes, utilizing ATP hydrolysis to facilitate the efflux of substances.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 3,
+          "sentence": "It is particularly significant in the context of human physiology for its involvement in the secretion of odor precursors from apocrine sweat glands, which are subsequently converted into volatile compounds responsible for body odor (Martin2010A).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 4,
+          "sentence": "The ABCC11 protein is also implicated in the transport of steroid sulfates and amino-acid conjugates, contributing to broader metabolic processes (Ishikawa2013Pharmacogenetics; Bortfeld2006Human).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 5,
+          "sentence": "Genetic variations in ABCC11, such as the 538G>A single nucleotide polymorphism, have been linked to phenotypic differences in earwax type and body odor, as well as potential implications in cancer prognosis and treatment (Toyoda2009Earwax; Yamada2013High).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene abbreviation 'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "The human gene 'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 1,
+          "sentence": "The ABCC11 gene encodes the ATP binding cassette subfamily C member 11 protein, which is a transmembrane transporter belonging to the ATP-binding cassette (ABC) transporter family.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses a gene abbreviation 'ABCC11' and the full gene name.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene abbreviation 'ABCC11' and the full gene name are used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation and full name are not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because it involves mentioning a gene name.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Both the abbreviation 'ABCC11' and the full gene name are used.",
+              "reasoning": "Partial adherence; the abbreviation is used but the full gene name is included, which is acceptable but not preferred.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "The human gene 'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' and the full gene name to fully comply with formatting standards."
+        },
+        {
+          "index": 2,
+          "sentence": "This protein plays a critical role in the transport of various molecules across cellular membranes, utilizing ATP hydrolysis to facilitate the efflux of substances.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 3,
+          "sentence": "It is particularly significant in the context of human physiology for its involvement in the secretion of odor precursors from apocrine sweat glands, which are subsequently converted into volatile compounds responsible for body odor (Martin2010A).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 4,
+          "sentence": "The ABCC11 protein is also implicated in the transport of steroid sulfates and amino-acid conjugates, contributing to broader metabolic processes (Ishikawa2013Pharmacogenetics; Bortfeld2006Human).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 5,
+          "sentence": "Genetic variations in ABCC11, such as the 538G>A single nucleotide polymorphism, have been linked to phenotypic differences in earwax type and body odor, as well as potential implications in cancer prognosis and treatment (Toyoda2009Earwax; Yamada2013High).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene abbreviation 'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "The human gene 'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 1,
+          "sentence": "The ABCC11 gene encodes the ATP binding cassette subfamily C member 11 protein, which is a transmembrane transporter belonging to the ATP-binding cassette (ABC) transporter family.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses a gene abbreviation 'ABCC11' and the full gene name.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene abbreviation 'ABCC11' and the full gene name are used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation and full name are not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because it involves mentioning a gene name.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Both the abbreviation 'ABCC11' and the full gene name are used.",
+              "reasoning": "Partial adherence; the abbreviation is used but the full gene name is included, which is acceptable but not preferred.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "The human gene 'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' and the full gene name to fully comply with formatting standards."
+        },
+        {
+          "index": 2,
+          "sentence": "This protein plays a critical role in the transport of various molecules across cellular membranes, utilizing ATP hydrolysis to facilitate the efflux of substances.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 3,
+          "sentence": "It is particularly significant in the context of human physiology for its involvement in the secretion of odor precursors from apocrine sweat glands, which are subsequently converted into volatile compounds responsible for body odor (Martin2010A).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 4,
+          "sentence": "The ABCC11 protein is also implicated in the transport of steroid sulfates and amino-acid conjugates, contributing to broader metabolic processes (Ishikawa2013Pharmacogenetics; Bortfeld2006Human).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 5,
+          "sentence": "Genetic variations in ABCC11, such as the 538G>A single nucleotide polymorphism, have been linked to phenotypic differences in earwax type and body odor, as well as potential implications in cancer prognosis and treatment (Toyoda2009Earwax; Yamada2013High).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene abbreviation 'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "The human gene 'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 1,
+          "sentence": "The ABCC11 gene encodes the ATP binding cassette subfamily C member 11 protein, which is a transmembrane transporter belonging to the ATP-binding cassette (ABC) transporter family.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses a gene abbreviation 'ABCC11' and the full gene name.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene abbreviation 'ABCC11' and the full gene name are used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation and full name are not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because it involves mentioning a gene name.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Both the abbreviation 'ABCC11' and the full gene name are used.",
+              "reasoning": "Partial adherence; the abbreviation is used but the full gene name is included, which is acceptable but not preferred.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "The human gene 'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' and the full gene name to fully comply with formatting standards."
+        },
+        {
+          "index": 2,
+          "sentence": "This protein plays a critical role in the transport of various molecules across cellular membranes, utilizing ATP hydrolysis to facilitate the efflux of substances.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 3,
+          "sentence": "It is particularly significant in the context of human physiology for its involvement in the secretion of odor precursors from apocrine sweat glands, which are subsequently converted into volatile compounds responsible for body odor (Martin2010A).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 4,
+          "sentence": "The ABCC11 protein is also implicated in the transport of steroid sulfates and amino-acid conjugates, contributing to broader metabolic processes (Ishikawa2013Pharmacogenetics; Bortfeld2006Human).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 5,
+          "sentence": "Genetic variations in ABCC11, such as the 538G>A single nucleotide polymorphism, have been linked to phenotypic differences in earwax type and body odor, as well as potential implications in cancer prognosis and treatment (Toyoda2009Earwax; Yamada2013High).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene abbreviation 'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "The human gene 'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 1,
+          "sentence": "The ABCC11 gene encodes the ATP binding cassette subfamily C member 11 protein, which is a transmembrane transporter belonging to the ATP-binding cassette (ABC) transporter family.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses a gene abbreviation 'ABCC11' and the full gene name.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene abbreviation 'ABCC11' and the full gene name are used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation and full name are not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because it involves mentioning a gene name.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Both the abbreviation 'ABCC11' and the full gene name are used.",
+              "reasoning": "Partial adherence; the abbreviation is used but the full gene name is included, which is acceptable but not preferred.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "The human gene 'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' and the full gene name to fully comply with formatting standards."
+        },
+        {
+          "index": 2,
+          "sentence": "This protein plays a critical role in the transport of various molecules across cellular membranes, utilizing ATP hydrolysis to facilitate the efflux of substances.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 3,
+          "sentence": "It is particularly significant in the context of human physiology for its involvement in the secretion of odor precursors from apocrine sweat glands, which are subsequently converted into volatile compounds responsible for body odor (Martin2010A).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 4,
+          "sentence": "The ABCC11 protein is also implicated in the transport of steroid sulfates and amino-acid conjugates, contributing to broader metabolic processes (Ishikawa2013Pharmacogenetics; Bortfeld2006Human).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 5,
+          "sentence": "Genetic variations in ABCC11, such as the 538G>A single nucleotide polymorphism, have been linked to phenotypic differences in earwax type and body odor, as well as potential implications in cancer prognosis and treatment (Toyoda2009Earwax; Yamada2013High).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene abbreviation 'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "The human gene 'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        }
+      ],
+      "requirement_evaluations": [
+        {
+          "requirement_id": "30",
+          "requirement_category": "Content",
+          "classification": "Imperative Standards",
+          "applicable": true,
+          "applicability_reasoning": "Applicable because the section describes the function of the transcribed protein.",
+          "score": 1.0,
+          "confidence": 0.95,
+          "evidence": "The section provides detailed descriptions of ABCC11's role in molecule transport and physiological processes.",
+          "reasoning": "Complete adherence; the function is thoroughly described.",
+          "overlap_notes": "No significant overlaps with other sections."
+        }
+      ],
+      "meta_notes": "The section effectively describes the protein's functions but should address formatting issues in gene nomenclature."
+    },
+    {
+      "index": 3,
+      "title": "Structure",
+      "sentence_evaluations": [
+        {
+          "index": 1,
+          "sentence": "The ABCC11 gene encodes a protein that is part of the ATP-binding cassette (ABC) transporter family, specifically the C-class, which includes multidrug resistance-associated proteins (MRPs).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11' and the full gene name.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene abbreviation 'ABCC11' and the full gene name are used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation and full gene name are not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because it involves mentioning a gene name.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Both the abbreviation 'ABCC11' and the full gene name are used.",
+              "reasoning": "Partial adherence; the abbreviation is used but the full gene name is included, which is acceptable but not preferred.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "The human gene 'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' and the full gene name to fully comply with formatting standards."
+        },
+        {
+          "index": 2,
+          "sentence": "The ABCC11 protein consists of 1382 amino acids and is a full ABC transporter with two ATP-binding domains and two transmembrane domains (Tammur2001Two).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 3,
+          "sentence": "Structurally, it contains two ATP-binding cassettes and two core membrane-spanning domains (MSD1 and MSD2), resulting in a total of 12 transmembrane regions (Ishikawa2015Human).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 4,
+          "sentence": "Unlike some other MRPs, ABCC11 lacks the additional membrane-spanning domain (MSD0) (Ishikawa2015Human).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene symbol 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene symbol 'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene symbol is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "The gene symbol 'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 5,
+          "sentence": "The protein undergoes post-translational modifications, including N-linked glycosylation at Asn838 and Asn844, which is crucial for its localization in secretory cells (Ishikawa2015Human).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 6,
+          "sentence": "A single nucleotide polymorphism (SNP) in the ABCC11 gene, 538G > A (Gly180Arg), affects the protein's structure and glycosylation, leading to proteasomal degradation of the variant (Ishikawa2015Human).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11' and the full gene name.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "'ABCC11 gene' is used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation and full gene name are not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because it involves mentioning a gene name.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Both the abbreviation 'ABCC11' and the full gene name are used.",
+              "reasoning": "Partial adherence; the abbreviation is used but the full gene name is included.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' and the full gene name to fully comply with formatting standards."
+        },
+        {
+          "index": 7,
+          "sentence": "Multiple splicing variants of ABCC11 have been identified, with one variant lacking exon 28, which affects the second ATP-binding cassette (Yabuuchi2001Multiple).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene symbol 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene symbol is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 8,
+          "sentence": "These structural features and modifications play a significant role in the protein's function and localization.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 1,
+          "sentence": "The ABCC11 gene encodes a protein that is part of the ATP-binding cassette (ABC) transporter family, specifically the C-class, which includes multidrug resistance-associated proteins (MRPs).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11' and the full gene name.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene abbreviation 'ABCC11' and the full gene name are used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation and full gene name are not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because it involves mentioning a gene name.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Both the abbreviation 'ABCC11' and the full gene name are used.",
+              "reasoning": "Partial adherence; the abbreviation is used but the full gene name is included, which is acceptable but not preferred.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "The gene symbol 'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' and the full gene name to fully comply with formatting standards."
+        },
+        {
+          "index": 2,
+          "sentence": "The ABCC11 protein consists of 1382 amino acids and is a full ABC transporter with two ATP-binding domains and two transmembrane domains (Tammur2001Two).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 3,
+          "sentence": "Structurally, it contains two ATP-binding cassettes and two core membrane-spanning domains (MSD1 and MSD2), resulting in a total of 12 transmembrane regions (Ishikawa2015Human).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 4,
+          "sentence": "Unlike some other MRPs, ABCC11 lacks the additional membrane-spanning domain (MSD0) (Ishikawa2015Human).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene symbol 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene symbol 'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene symbol is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "The gene symbol 'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 5,
+          "sentence": "The protein undergoes post-translational modifications, including N-linked glycosylation at Asn838 and Asn844, which is crucial for its localization in secretory cells (Ishikawa2015Human).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 6,
+          "sentence": "A single nucleotide polymorphism (SNP) in the ABCC11 gene, 538G > A (Gly180Arg), affects the protein's structure and glycosylation, leading to proteasomal degradation of the variant (Ishikawa2015Human).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11' and the full gene name.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "'ABCC11 gene' is used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation and full gene name are not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because it involves mentioning a gene name.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Both the abbreviation 'ABCC11' and the full gene name are used.",
+              "reasoning": "Partial adherence; the abbreviation is used but the full gene name is included.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' and the full gene name to fully comply with formatting standards."
+        },
+        {
+          "index": 7,
+          "sentence": "Multiple splicing variants of ABCC11 have been identified, with one variant lacking exon 28, which affects the second ATP-binding cassette (Yabuuchi2001Multiple).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene symbol 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene symbol is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 8,
+          "sentence": "These structural features and modifications play a significant role in the protein's function and localization.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 1,
+          "sentence": "The ABCC11 gene encodes a protein that is part of the ATP-binding cassette (ABC) transporter family, specifically the C-class, which includes multidrug resistance-associated proteins (MRPs).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11' and the full gene name.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene abbreviation 'ABCC11' and the full gene name are used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation and full gene name are not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because it involves mentioning a gene name.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Both the abbreviation 'ABCC11' and the full gene name are used.",
+              "reasoning": "Partial adherence; the abbreviation is used but the full gene name is included, which is acceptable but not preferred.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "The human gene 'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' and the full gene name to fully comply with formatting standards."
+        },
+        {
+          "index": 2,
+          "sentence": "The ABCC11 protein consists of 1382 amino acids and is a full ABC transporter with two ATP-binding domains and two transmembrane domains (Tammur2001Two).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 3,
+          "sentence": "Structurally, it contains two ATP-binding cassettes and two core membrane-spanning domains (MSD1 and MSD2), resulting in a total of 12 transmembrane regions (Ishikawa2015Human).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 4,
+          "sentence": "Unlike some other MRPs, ABCC11 lacks the additional membrane-spanning domain (MSD0) (Ishikawa2015Human).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene symbol 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene symbol 'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene symbol is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "The gene symbol 'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 5,
+          "sentence": "The protein undergoes post-translational modifications, including N-linked glycosylation at Asn838 and Asn844, which is crucial for its localization in secretory cells (Ishikawa2015Human).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 6,
+          "sentence": "A single nucleotide polymorphism (SNP) in the ABCC11 gene, 538G > A (Gly180Arg), affects the protein's structure and glycosylation, leading to proteasomal degradation of the variant (Ishikawa2015Human).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11' and the full gene name.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "'ABCC11 gene' is used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation and full gene name are not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because it involves mentioning a gene name.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Both the abbreviation 'ABCC11' and the full gene name are used.",
+              "reasoning": "Partial adherence; the abbreviation is used but the full gene name is included.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' and the full gene name to fully comply with formatting standards."
+        },
+        {
+          "index": 7,
+          "sentence": "Multiple splicing variants of ABCC11 have been identified, with one variant lacking exon 28, which affects the second ATP-binding cassette (Yabuuchi2001Multiple).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene symbol 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene symbol is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 8,
+          "sentence": "These structural features and modifications play a significant role in the protein's function and localization.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        }
+      ],
+      "requirement_evaluations": [],
+      "meta_notes": "The section provides detailed structural information but should address formatting issues related to gene nomenclature."
+    },
+    {
+      "index": 4,
+      "title": "Function",
+      "sentence_evaluations": [
+        {
+          "index": 1,
+          "sentence": "The ABCC11 gene encodes a protein that functions as an ATP-dependent efflux pump, primarily involved in the transport of various substances across cellular membranes.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses a gene abbreviation 'ABCC11' and the full gene name.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene abbreviation 'ABCC11' and the full gene name are used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation and full gene name are not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because it involves mentioning a gene name.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Both the abbreviation 'ABCC11' and the full gene name are used.",
+              "reasoning": "Partial adherence; the abbreviation is used but the full gene name is included, which is acceptable but not preferred.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' and the full gene name to fully comply with formatting standards."
+        },
+        {
+          "index": 2,
+          "sentence": "In healthy human cells, ABCC11 is expressed in apocrine sweat glands, where it plays a crucial role in the secretion of odor precursors.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 3,
+          "sentence": "These precursors are transported from the apocrine glands and subsequently converted into volatile odoriferous substances by bacterial enzymes on the skin surface, contributing to human axillary odor (Martin2010A).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 4,
+          "sentence": "The protein is involved in the secretion of amino-acid conjugates and steroid sulfates, such as dehydroepiandrosterone sulfate (DHEAS), which are precursors to key body odorants (Martin2010A; Bortfeld2006Human).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 5,
+          "sentence": "ABCC11 also affects the secretion of compounds from the leucine/isoleucine degradation pathway, influencing the presence of branched acids in sweat (Martin2010A).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 6,
+          "sentence": "Beyond its role in sweat glands, ABCC11 is expressed in other tissues, including the brain, where it is localized in axonal membranes and may modulate neuronal excitability by mediating the efflux of neurosteroids (Bortfeld2006Human).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 7,
+          "sentence": "The gene's function in transporting lipophilic anions and steroid metabolites suggests its involvement in broader metabolic and transport processes (Ishikawa2013Pharmacogenetics).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 1,
+          "sentence": "The ABCC11 gene encodes a protein that functions as an ATP-dependent efflux pump, primarily involved in the transport of various substances across cellular membranes.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses a gene abbreviation 'ABCC11' and the full gene name.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "The gene abbreviation 'ABCC11' and the full gene name are used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation and full gene name are not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "6",
+              "requirement_category": "Naming",
+              "classification": "Best Practices",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because it involves mentioning a gene name.",
+              "score": 0.5,
+              "confidence": 0.9,
+              "evidence": "Both the abbreviation 'ABCC11' and the full gene name are used.",
+              "reasoning": "Partial adherence; the abbreviation is used but the full gene name is included, which is acceptable but not preferred.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' and the full gene name to fully comply with formatting standards."
+        },
+        {
+          "index": 2,
+          "sentence": "In healthy human cells, ABCC11 is expressed in apocrine sweat glands, where it plays a crucial role in the secretion of odor precursors.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 3,
+          "sentence": "These precursors are transported from the apocrine glands and subsequently converted into volatile odoriferous substances by bacterial enzymes on the skin surface, contributing to human axillary odor (Martin2010A).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 4,
+          "sentence": "The protein is involved in the secretion of amino-acid conjugates and steroid sulfates, such as dehydroepiandrosterone sulfate (DHEAS), which are precursors to key body odorants (Martin2010A; Bortfeld2006Human).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 5,
+          "sentence": "ABCC11 also affects the secretion of compounds from the leucine/isoleucine degradation pathway, influencing the presence of branched acids in sweat (Martin2010A).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 6,
+          "sentence": "Beyond its role in sweat glands, ABCC11 is expressed in other tissues, including the brain, where it is localized in axonal membranes and may modulate neuronal excitability by mediating the efflux of neurosteroids (Bortfeld2006Human).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 7,
+          "sentence": "The gene's function in transporting lipophilic anions and steroid metabolites suggests its involvement in broader metabolic and transport processes (Ishikawa2013Pharmacogenetics).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        }
+      ],
+      "requirement_evaluations": [
+        {
+          "requirement_id": "30",
+          "requirement_category": "Content",
+          "classification": "Imperative Standards",
+          "applicable": true,
+          "applicability_reasoning": "Applicable because the section describes the function of the transcribed protein.",
+          "score": 1.0,
+          "confidence": 0.95,
+          "evidence": "The section provides detailed descriptions of ABCC11's role in molecule transport and physiological processes.",
+          "reasoning": "Complete adherence; the function is thoroughly described.",
+          "overlap_notes": "No significant overlaps with other sections."
+        }
+      ],
+      "meta_notes": "The section effectively describes the protein's functions but should address formatting issues in gene nomenclature."
+    },
+    {
+      "index": 5,
+      "title": "Clinical Significance",
+      "sentence_evaluations": [
+        {
+          "index": 1,
+          "sentence": "Mutations in the ABCC11 gene, particularly the single nucleotide polymorphism (SNP) 538G>A, have significant clinical implications.",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11' and mentions the full gene name.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "'ABCC11 gene' is used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation and full gene name are not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' and the full gene name to fully comply with formatting standards."
+        },
+        {
+          "index": 2,
+          "sentence": "This SNP determines the type of earwax, with the 538GG and GA genotypes associated with wet earwax and the 538AA genotype linked to dry earwax.",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 3,
+          "sentence": "The presence of the 538G allele is also associated with axillary osmidrosis, a condition characterized by excessive body odor due to increased apocrine gland secretion (Toyoda2009Earwax; Inoue2010Correlation).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 4,
+          "sentence": "The 538A allele results in a loss of protein function due to its recognition as a substrate for endoplasmic-reticulum-associated degradation, leading to a dry earwax phenotype and reduced apocrine secretion (Toyoda2016Regulation).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        },
+        {
+          "index": 5,
+          "sentence": "ABCC11 expression levels have been linked to breast cancer, with high expression associated with aggressive tumor subtypes and lower disease-free survival rates (Yamada2013High).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation 'ABCC11'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; the gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 6,
+          "sentence": "In non-small cell lung cancer (NSCLC), the ABCC11 SNP538 polymorphism may serve as a predictive biomarker for the efficacy of the oral 5-fluorouracil derivative drug S-1, with the A/A genotype showing increased sensitivity to treatment (Uemura2019ABCC11).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "5",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because the sentence uses 'ABCC11 SNP538 polymorphism'.",
+              "score": 0.25,
+              "confidence": 0.95,
+              "evidence": "'ABCC11' is used without italics.",
+              "reasoning": "Minimal adherence; gene abbreviation is not italicized as required.",
+              "overlap_notes": "No overlaps with other sentences."
+            },
+            {
+              "requirement_id": "7",
+              "requirement_category": "Language Usage",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applicable because a human gene name is mentioned.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "'ABCC11' is written in capitals.",
+              "reasoning": "Complete adherence; gene name is correctly capitalized.",
+              "overlap_notes": "No overlaps with other sentences."
+            }
+          ],
+          "meta_notes": "Consider italicizing gene symbol 'ABCC11' to comply with formatting standards."
+        },
+        {
+          "index": 7,
+          "sentence": "These findings highlight the gene's potential role in personalized medicine and treatment strategies (Ishikawa2013Pharmacogenetics).",
+          "requirement_evaluations": [],
+          "meta_notes": null
+        }
+      ],
+      "requirement_evaluations": [
+        {
+          "requirement_id": "32",
+          "requirement_category": "Content",
+          "classification": "Imperative Standards",
+          "applicable": true,
+          "applicability_reasoning": "Applicable because the section provides information on diseases and conditions related to mutations in the ABCC11 gene.",
+          "score": 1.0,
+          "confidence": 0.95,
+          "evidence": "The section discusses earwax types, axillary osmidrosis, breast cancer, and NSCLC in relation to ABCC11 gene mutations.",
+          "reasoning": "Complete adherence; the section thoroughly lists relevant diseases and conditions.",
+          "overlap_notes": "No significant overlaps with other sections."
+        }
+      ],
+      "meta_notes": "Overall, the section effectively lists diseases and conditions related to the ABCC11 gene, but formatting issues with gene nomenclature should be addressed."
+    }
+  ],
+  "article_evaluation": {
+    "requirement_evaluations": [],
+    "meta_notes": null
+  }
+}
