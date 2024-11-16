@@ -4,7 +4,11 @@ import { setupDevPlatform } from "@cloudflare/next-on-pages/next-dev";
 const nextConfig = {};
 
 if (process.env.NODE_ENV === "development") {
-  await setupDevPlatform();
+  try {
+    setupDevPlatform();
+  } catch (e) {
+    console.warn("Failed to setup dev platform:", e);
+  }
 }
 
 export default nextConfig;

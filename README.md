@@ -49,7 +49,7 @@ Omnipedia is a sophisticated document analysis and compliance evaluation tool th
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/omni-client.git
+git clone https://github.com/sayertindall/omni-client.git
 cd omni-client
 ```
 
