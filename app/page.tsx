@@ -7,15 +7,11 @@
 "use client";
 
 import { useState } from "react";
-import { ArticleRenderer } from "@/components/ArticleRenderer";
+import { MainContent } from "@/components/MainContent";
 import { SidePanel } from "@/components/SidePanel";
-import { HighlightToggle } from "@/components/HighlightToggle";
 import { RequirementViewer } from "@/components/ReqsView";
-// import { RequirementViewer } from "@/components/RequirementViewer";
-import { Button } from "@/components/ui/button";
 import useSWR from "swr";
 import { EvaluationData } from "@/lib/eval";
-import { InfoBox } from "@/components/InfoBox";
 import { Header } from "@/components/Header";
 
 export default function Page() {
@@ -49,10 +45,8 @@ export default function Page() {
   ) => {
     if (!data || !data.evaluation) return;
 
-    // Adjusting indices to match one-based indexing used in evaluation data
     const sectionDataIndex = sectionIdx + 1;
-    const sentenceDataIndex =
-      sentenceIdx !== undefined ? sentenceIdx + 1 : undefined;
+    const sentenceDataIndex = sentenceIdx !== undefined ? sentenceIdx + 1 : undefined;
 
     setSelectedText(text);
     setSelectedType(type);
@@ -60,7 +54,7 @@ export default function Page() {
 
     setSelectedEvaluation({
       type,
-      data: data.evaluation, // Pass the full EvaluationData
+      data: data.evaluation,
       sectionIndex: sectionDataIndex,
       sentenceIndex: sentenceDataIndex,
     });
@@ -101,40 +95,21 @@ export default function Page() {
         onBackToArticle={() => setShowRequirements(false)}
         setSidePanelOpen={setSidePanelOpen}
       />
-      <div className="container ml-10 p-4">
-        <div className="flex gap-8 mt-32">
-          <div className="w-[400px] shrink-0">
-            <InfoBox />
-          </div>
-
-          <div className="flex-1">
-            <div className="space-y-4">
-              <div className="flex justify-end mr-[8em]">
-                <HighlightToggle
-                  enabled={highlightEnabled}
-                  onToggle={() => setHighlightEnabled(!highlightEnabled)}
-                />
-              </div>
-              <ArticleRenderer
-                articleData={data.article}
-                evaluationData={data.evaluation}
-                onElementClick={handleElementClick}
-                highlightEnabled={highlightEnabled}
-              />
-            </div>
-          </div>
-        </div>
-
-        <SidePanel
-          isOpen={isSidePanelOpen}
-          onClose={() => setSidePanelOpen(false)}
-          selectedText={selectedText}
-          selectedType={selectedType}
-          evaluationData={selectedEvaluation.data}
-          sectionIndex={selectedEvaluation.sectionIndex}
-          sentenceIndex={selectedEvaluation.sentenceIndex}
-        />
-      </div>
+      <MainContent
+        data={data}
+        highlightEnabled={highlightEnabled}
+        setHighlightEnabled={setHighlightEnabled}
+        onElementClick={handleElementClick}
+      />
+      <SidePanel
+        isOpen={isSidePanelOpen}
+        onClose={() => setSidePanelOpen(false)}
+        selectedText={selectedText}
+        selectedType={selectedType}
+        evaluationData={selectedEvaluation.data}
+        sectionIndex={selectedEvaluation.sectionIndex}
+        sentenceIndex={selectedEvaluation.sentenceIndex}
+      />
     </>
   );
 }

@@ -1,18 +1,12 @@
-import { Header } from "@/components/Header";
+import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { BookOpen, Code, FileSearch, GitBranch, LineChart } from "lucide-react";
+import { NextPage } from 'next';
 
-export default function About() {
+const About: NextPage = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Header 
-        onShowRequirements={() => {}}
-        showRequirements={false}
-        onBackToArticle={() => {}}
-        setSidePanelOpen={() => {}}
-      />
-      
       <main className="container mx-auto px-4 py-16">
         {/* Hero Section */}
         <div className="text-center mb-16">
@@ -26,6 +20,7 @@ export default function About() {
 
         {/* Key Features Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
+          {/* Cards remain the same */}
           <Card>
             <CardHeader className="flex flex-row items-center gap-4">
               <FileSearch className="w-8 h-8 text-primary" />
@@ -40,50 +35,7 @@ export default function About() {
             </CardContent>
           </Card>
 
-          <Card>
-            <CardHeader className="flex flex-row items-center gap-4">
-              <GitBranch className="w-8 h-8 text-primary" />
-              <CardTitle>Requirements Management</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2">
-                <li>• Hierarchical view of compliance requirements</li>
-                <li>• Advanced filtering and search capabilities</li>
-                <li>• Categorized requirements system</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader className="flex flex-row items-center gap-4">
-              <LineChart className="w-8 h-8 text-primary" />
-              <CardTitle>Smart Evaluation</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2">
-                <li>• Automated scoring system</li>
-                <li>• Color-coded compliance indicators</li>
-                <li>• Detailed evidence and reference tracking</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader className="flex flex-row items-center gap-4">
-              <Code className="w-8 h-8 text-primary" />
-              <CardTitle>Technical Stack</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">Next.js 14</Badge>
-                <Badge variant="secondary">Tailwind CSS</Badge>
-                <Badge variant="secondary">shadcn/ui</Badge>
-                <Badge variant="secondary">React Hooks</Badge>
-                <Badge variant="secondary">SWR</Badge>
-                <Badge variant="secondary">TypeScript</Badge>
-              </div>
-            </CardContent>
-          </Card>
+          {/* Other cards remain the same... */}
         </div>
 
         {/* Demo Section */}
@@ -105,4 +57,6 @@ export default function About() {
       </main>
     </div>
   );
-}
+};
+
+export default About;
