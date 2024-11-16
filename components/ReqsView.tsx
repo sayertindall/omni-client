@@ -22,17 +22,8 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import { RequirementsData, RequirementGroup, Requirement } from "@/lib/eval";
 import requirementsData from "@/lib/data/requirements.json";
-
-export interface Requirement {
-  id: string;
-  description: string;
-  reference: string;
-  category: string;
-  classification: string;
-  where: string;
-  when: string;
-}
 
 interface RequirementViewerProps {
   focusedId?: string;
@@ -239,29 +230,15 @@ export const RequirementViewer: React.FC<RequirementViewerProps> = ({
   }>({});
 
   const groupedRequirements = useMemo(() => {
-    const requirements = requirementsData as {
-      groups: {
-        [category: string]: Requirement[];
-      };
-    };
-
-    const grouped: {
-      [category: string]: {
-        [classification: string]: Requirement[];
-      };
-    } = {};
-
-    Object.entries(requirements.groups).forEach(([category, reqs]) => {
-      grouped[category] = {};
-      reqs.forEach((req: Requirement) => {
-        if (!grouped[category][req.classification]) {
-          grouped[category][req.classification] = [];
-        }
-        grouped[category][req.classification].push(req);
-      });
-    });
-
-    return grouped;
+    const reqs = requirementsData as RequirementsData;
+    return reqs.groups.reduce((acc, group) => {
+      acc[group.category] = group.requirements.reduce((classAcc, req) => {
+        classAcc[req.classification] = classAcc[req.classification] || [];
+        classAcc[req.classification].push(req);
+        return classAcc;
+      }, {} as { [classification: string]: Requirement[] });
+      return acc;
+    }, {} as { [category: string]: { [classification: string]: Requirement[] } });
   }, []);
 
   const toggleCategory = useCallback((category: string) => {

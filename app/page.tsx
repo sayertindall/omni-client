@@ -1,26 +1,26 @@
-/**
- * @title Page
- * @fileoverview Main page component that handles article viewing, requirements, and evaluation data
- * @path /app/page.tsx
- */
-
 "use client";
 
 import { useState } from "react";
-import { MainContent } from "@/components/MainContent";
 import { SidePanel } from "@/components/SidePanel";
 import { RequirementViewer } from "@/components/ReqsView";
-import useSWR from "swr";
-import { EvaluationData } from "@/lib/eval";
+import { EvaluationData, convertCacheToEvalData } from "@/lib/eval";
+import { getData } from "@/lib/loader";
 import { useApp } from "@/app/context/AppContext";
+import { MainContent } from "@/components/MainContent";
 
 export default function Page() {
-  const { showRequirements, setShowRequirements } = useApp();
+  const { 
+    showRequirements, 
+    selectedArticle,
+    selectedSource,
+    isSidePanelOpen, 
+    setSidePanelOpen 
+  } = useApp();
+
   const [selectedText, setSelectedText] = useState<string | null>(null);
   const [selectedType, setSelectedType] = useState<
     "section" | "sentence" | "article" | null
   >(null);
-  const [isSidePanelOpen, setSidePanelOpen] = useState(false);
   const [highlightEnabled, setHighlightEnabled] = useState(true);
   const [focusedRequirement, setFocusedRequirement] = useState<string>();
   const [selectedEvaluation, setSelectedEvaluation] = useState<{
@@ -30,12 +30,9 @@ export default function Page() {
     sentenceIndex?: number;
   }>({ type: null, data: null });
 
-  const fetcher = (url: string) => fetch(url).then((res) => res.json());
-
-  const { data, error } = useSWR("/api/data", fetcher, {
-    revalidateOnFocus: false,
-    revalidateOnReconnect: false,
-  });
+  // Get data using the loader
+  const data = getData(selectedArticle);
+  const error = !data;
 
   const handleElementClick = (
     text: string,
@@ -43,7 +40,7 @@ export default function Page() {
     sectionIdx: number,
     sentenceIdx?: number
   ) => {
-    if (!data || !data.evaluation) return;
+    if (!data || !data[selectedSource]?.evaluation) return;
 
     const sectionDataIndex = sectionIdx + 1;
     const sentenceDataIndex = sentenceIdx !== undefined ? sentenceIdx + 1 : undefined;
@@ -54,19 +51,13 @@ export default function Page() {
 
     setSelectedEvaluation({
       type,
-      data: data.evaluation,
+      data: convertCacheToEvalData(data[selectedSource].evaluation),
       sectionIndex: sectionDataIndex,
       sentenceIndex: sentenceDataIndex,
     });
   };
 
-  const handleShowRequirements = () => {
-    setShowRequirements(true);
-    setSidePanelOpen(false);
-  };
-
   if (error) return <div>Error loading data</div>;
-  if (!data) return <div>Loading...</div>;
 
   if (showRequirements) {
     return (
@@ -80,14 +71,13 @@ export default function Page() {
   }
 
   return (
-    <>
+    <div className="min-h-screen">
       <MainContent
         data={data}
         highlightEnabled={highlightEnabled}
         setHighlightEnabled={setHighlightEnabled}
         onElementClick={handleElementClick}
-        onShowRequirements={handleShowRequirements} 
-
+        selectedSource={selectedSource}
       />
       <SidePanel
         isOpen={isSidePanelOpen}
@@ -98,6 +88,6 @@ export default function Page() {
         sectionIndex={selectedEvaluation.sectionIndex}
         sentenceIndex={selectedEvaluation.sentenceIndex}
       />
-    </>
+    </div>
   );
 }

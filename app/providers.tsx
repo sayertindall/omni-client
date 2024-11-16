@@ -6,38 +6,18 @@
 
 "use client";
 
-import React, { createContext, useContext, useState } from 'react';
+import { AppProvider } from "./context/AppContext";
+import { ThemeProvider } from "next-themes";
 
-interface AppContextType {
-  showRequirements: boolean;
-  setShowRequirements: (show: boolean) => void;
-  setSidePanelOpen: (open: boolean) => void;
-}
-
-const AppContext = createContext<AppContextType | undefined>(undefined);
-
-export function AppProvider({ children }: { children: React.ReactNode }) {
-  const [showRequirements, setShowRequirements] = useState(false);
-  const [isSidePanelOpen, setSidePanelOpen] = useState(false);
-
-  const value = {
-    showRequirements,
-    setShowRequirements,
-    isSidePanelOpen,
-    setSidePanelOpen,
-  };
-
+export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <AppContext.Provider value={value}>
-      {children}
-    </AppContext.Provider>
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
+      disableTransitionOnChange
+    >
+      <AppProvider>{children}</AppProvider>
+    </ThemeProvider>
   );
-}
-
-export function useApp() {
-  const context = useContext(AppContext);
-  if (context === undefined) {
-    throw new Error('useApp must be used within an AppProvider');
-  }
-  return context;
 } 

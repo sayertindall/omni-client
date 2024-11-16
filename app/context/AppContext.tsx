@@ -8,6 +8,10 @@
 import React, { createContext, useContext, useState } from 'react';
 
 interface AppContextType {
+  selectedArticle: string;
+  setSelectedArticle: (value: string) => void;
+  selectedSource: "wikipedia" | "wikicrow";
+  setSelectedSource: (value: "wikipedia" | "wikicrow") => void;
   showRequirements: boolean;
   setShowRequirements: (show: boolean) => void;
   isSidePanelOpen: boolean;
@@ -19,12 +23,19 @@ const AppContext = createContext<AppContextType | undefined>(undefined);
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const [showRequirements, setShowRequirements] = useState(false);
   const [isSidePanelOpen, setSidePanelOpen] = useState(false);
+  const [selectedArticle, setSelectedArticle] = useState("");
+  const [selectedSource, setSelectedSource] = useState<"wikipedia" | "wikicrow">("wikipedia");
+
 
   const value = {
     showRequirements,
     setShowRequirements,
     isSidePanelOpen,
     setSidePanelOpen,
+    selectedArticle,
+    setSelectedArticle,
+    selectedSource,
+    setSelectedSource
   };
 
   return (

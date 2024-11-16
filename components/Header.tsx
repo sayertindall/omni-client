@@ -11,6 +11,13 @@ import { Button } from "./ui/button";
 import { BookOpen, GithubIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "./ui/select";
 
 // Add this interface at the top of your Header component file
 interface HeaderProps {
@@ -19,6 +26,10 @@ interface HeaderProps {
   onBackToArticle: () => void;
   setSidePanelOpen: (open: boolean) => void;
   onHomeClick: () => void;
+  selectedArticle: string;
+  setSelectedArticle: (value: string) => void;
+  selectedSource: "wikipedia" | "wikicrow";
+  setSelectedSource: (value: "wikipedia" | "wikicrow") => void;
 }
 
 export function Header({ 
@@ -26,7 +37,11 @@ export function Header({
   showRequirements, 
   onBackToArticle,
   setSidePanelOpen,
-  onHomeClick
+  onHomeClick,
+  selectedArticle,
+  setSelectedArticle,
+  selectedSource,
+  setSelectedSource
 }: HeaderProps) {
   const pathname = usePathname();
   const isHomePage = pathname === '/';
@@ -36,18 +51,60 @@ export function Header({
     setSidePanelOpen(false);
   };
 
+  const handleArticleChange = (value: string) => {
+    console.log('Article selection changed to:', value);
+    setSelectedArticle(value);
+  };
+
+  const handleSourceChange = (value: "wikipedia" | "wikicrow") => {
+    console.log('Source selection changed to:', value);
+    setSelectedSource(value);
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-14 items-center justify-between px-4">
-        {/* Logo Section with Link */}
-        <Link 
-          href="/" 
-          className="flex items-center space-x-2 hover:opacity-80"
-          onClick={onHomeClick}
-        >
-          <BookOpen className="h-6 w-6 text-primary" aria-hidden="true" />
-          <span className="text-lg font-bold text-primary">Omnipedia</span>
-        </Link>
+        {/* Logo Section with Link and Dropdowns */}
+        <div className="flex items-center space-x-8">
+          <Link 
+            href="/" 
+            className="flex items-center space-x-2 hover:opacity-80"
+            onClick={onHomeClick}
+          >
+            <BookOpen className="h-6 w-6 text-primary" aria-hidden="true" />
+            <span className="text-lg font-bold text-primary">Omnipedia</span>
+          </Link>
+
+          {/* Dropdowns next to logo */}
+          <Select
+            value={selectedArticle}
+            onValueChange={handleArticleChange}
+          >
+            <SelectTrigger className="w-[140px]">
+              <SelectValue placeholder="Select article" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="ABCC11">ABCC11</SelectItem>
+              <SelectItem value="APRT">APRT</SelectItem>
+              <SelectItem value="B3GAT1">B3GAT1</SelectItem>
+              <SelectItem value="GRIA2">GRIA2</SelectItem>
+              <SelectItem value="NEW_GENE">NEW_GENE</SelectItem>
+            </SelectContent>
+          </Select>
+          
+          <Select
+            value={selectedSource}
+            onValueChange={handleSourceChange}
+          >
+            <SelectTrigger className="w-[140px]">
+              <SelectValue placeholder="Select source" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="wikipedia">Wikipedia</SelectItem>
+              <SelectItem value="wikicrow">WikiCrow</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
 
         {/* Navigation and Actions */}
         <div className="flex items-center space-x-4">

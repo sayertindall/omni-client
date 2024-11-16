@@ -4,12 +4,11 @@
  * @path app/layout.tsx
  */
 
-import { AppProvider } from "./context/AppContext";
 import { HeaderWrapper } from "@/components/HeaderWrapper";
 import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "next-themes";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Omnipedia",
@@ -24,18 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <AppProvider>
-            <HeaderWrapper />
-            {children}
-            <Footer />
-          </AppProvider>
-        </ThemeProvider>
+        <Providers>
+          <HeaderWrapper />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

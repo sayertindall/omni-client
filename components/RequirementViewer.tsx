@@ -5,6 +5,7 @@
  */
 
 import React, { useMemo } from "react";
+import requirementsData from "@/lib/data/requirements.json";
 import {
   Card,
   CardContent,
@@ -15,101 +16,82 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
-import requirementsData from "@/lib/data/requirements.json";
-
+import { RequirementsData, RequirementGroup, Requirement } from "@/lib/eval";
 
 interface RequirementViewerProps {
   focusedId?: string;
   onRequirementClick?: (id: string) => void;
 }
 
-interface Requirement {
-  id: string;
-  description: string;
-  reference: string;
-  category: string;
-  classification: string;
-  where: string;
-  when: string;
+// Add the RequirementCard component that was missing
+interface RequirementCardProps {
+  requirement: Requirement;
+  isFocused?: boolean;
+  onRequirementClick?: (id: string) => void;
 }
 
-export const RequirementViewer = ({
+const RequirementCard: React.FC<RequirementCardProps> = ({
+  requirement,
+  isFocused,
+  onRequirementClick,
+}) => (
+  <Card
+    className={cn(
+      "cursor-pointer transition-colors hover:bg-muted/50",
+      isFocused && "border-primary"
+    )}
+    onClick={() => onRequirementClick?.(requirement.id)}
+  >
+    <CardHeader>
+      <CardTitle className="text-lg">
+        {requirement.id}
+        <Badge className="ml-2" variant="outline">
+          {requirement.classification}
+        </Badge>
+      </CardTitle>
+      <CardDescription>{requirement.category}</CardDescription>
+    </CardHeader>
+    <CardContent>
+      <p className="text-sm text-muted-foreground">{requirement.description}</p>
+      <div className="mt-4 space-y-2">
+        <p className="text-xs">
+          <strong>Where:</strong> {requirement.where}
+        </p>
+        <p className="text-xs">
+          <strong>When:</strong> {requirement.when}
+        </p>
+        <p className="text-xs">
+          <strong>Reference:</strong> {requirement.reference}
+        </p>
+      </div>
+    </CardContent>
+  </Card>
+);
+
+export const RequirementViewer: React.FC<RequirementViewerProps> = ({
   focusedId,
   onRequirementClick,
-}: RequirementViewerProps) => {
-  // Memoize the flattened requirements array
-  const requirements = useMemo(() => {
-    const allRequirements: Requirement[] = [];
-    Object.entries(requirementsData.groups).forEach(([category, reqs]) => {
-      allRequirements.push(...reqs);
-    });
-    return allRequirements;
-  }, []);
-
-  // Group requirements by category
-  const groupedRequirements = useMemo(() => {
-    return Object.entries(requirementsData.groups).map(([category, reqs]) => ({
-      category,
-      requirements: reqs as Requirement[],
-    }));
-  }, []);
-
-  const getClassificationColor = (classification: string) => {
-    switch (classification) {
-      case "Imperative Standards":
-        return "bg-red-100 text-red-800";
-      case "Best Practices":
-        return "bg-blue-100 text-blue-800";
-      case "Flexible Guidelines":
-        return "bg-green-100 text-green-800";
-      default:
-        return "bg-gray-100 text-gray-800";
-    }
-  };
+}) => {
+  const groups = useMemo(() => 
+    (requirementsData as RequirementsData).groups, 
+    []
+  );
 
   return (
     <ScrollArea className="h-screen">
       <div className="p-4 space-y-6">
-        {groupedRequirements.map(({ category, requirements }) => (
-          <div key={category} className="space-y-4">
-            <h2 className="text-2xl font-bold">{category}</h2>
+        {groups.map((group: RequirementGroup) => (
+          <div key={group.category} className="space-y-4">
+            <h2 className="text-2xl font-bold">{group.category}</h2>
+            <p className="text-gray-600">{group.description}</p>
             <div className="grid gap-4">
-              {requirements.map((req) => (
-                <Card
+              {group.requirements.map((req: Requirement) => (
+                <RequirementCard
                   key={req.id}
-                  className={cn(
-                    "transition-all hover:shadow-md cursor-pointer",
-                    focusedId === req.id
-                      ? "ring-2 ring-blue-500 shadow-lg"
-                      : "hover:ring-1 hover:ring-gray-200"
-                  )}
-                  onClick={() => onRequirementClick?.(req.id)}
-                >
-                  <CardHeader>
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <Badge variant="outline">#{req.id}</Badge>
-                        <Badge
-                          className={getClassificationColor(req.classification)}
-                        >
-                          {req.classification}
-                        </Badge>
-                      </div>
-                    </div>
-                    <CardTitle className="text-lg">{req.description}</CardTitle>
-                    <CardDescription>{req.reference}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary" className="text-xs">
-                        Where: {req.where}
-                      </Badge>
-                      <Badge variant="secondary" className="text-xs">
-                        When: {req.when}
-                      </Badge>
-                    </div>
-                  </CardContent>
-                </Card>
+                  requirement={req}
+                  isFocused={focusedId === req.id}
+                  onRequirementClick={onRequirementClick}
+                />
               ))}
             </div>
           </div>

@@ -14,10 +14,10 @@ interface MainContentProps {
     highlightEnabled: boolean;
     onElementClick: (text: string, type: "section" | "sentence", sectionIdx: number, sentenceIdx?: number) => void;
     setHighlightEnabled: (enabled: boolean) => void;
-    onShowRequirements: () => void;
+    selectedSource: "wikipedia" | "wikicrow";
   }
   
-  export function MainContent({ data, highlightEnabled, onElementClick, setHighlightEnabled }: MainContentProps) {
+  export function MainContent({ data, highlightEnabled, onElementClick, setHighlightEnabled, selectedSource }: MainContentProps) {
     return (
       <div className="container ml-6 p-4">
         <div className="flex gap-6 mt-16">
@@ -35,8 +35,8 @@ interface MainContentProps {
               <div className="py-6 pl-6 bg-white dark:bg-gray-900">
                 <div className="w-full">
                   <ArticleRenderer
-                    articleData={data.article}
-                    evaluationData={data.evaluation}
+                    articleData={data[selectedSource].article}
+                    evaluationData={data[selectedSource].evaluation}
                     onElementClick={onElementClick}
                     highlightEnabled={highlightEnabled}
                   />
