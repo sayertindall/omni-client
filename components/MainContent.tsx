@@ -23,20 +23,24 @@ interface MainContentProps {
           <div className="w-[400px] shrink-0">
             <InfoBox />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 max-w-[1200px]">
             <div className="space-y-4">
-              <div className="flex justify-end mr-[6em]">
+              <div className="flex justify-end mr-2">
                 <HighlightToggle
                   enabled={highlightEnabled}
                   onToggle={() => setHighlightEnabled(!highlightEnabled)}
                 />
               </div>
-              <ArticleRenderer
-                articleData={data.article}
-                evaluationData={data.evaluation}
-                onElementClick={onElementClick}
-                highlightEnabled={highlightEnabled}
-              />
+              <div className="py-6 pl-6 bg-white dark:bg-gray-900">
+                <div className="w-full">
+                  <ArticleRenderer
+                    articleData={data.article}
+                    evaluationData={data.evaluation}
+                    onElementClick={onElementClick}
+                    highlightEnabled={highlightEnabled}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
