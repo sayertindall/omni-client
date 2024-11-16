@@ -1,7 +1,14 @@
 {
-  "name": "my-app",
+  "name": "omnipedia",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://omnipedia-client.pages.dev/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sayertindall/omni-client"
+  },
+  "author": "Sayer Tindall",
+  "description": "Omnipedia is a sophisticated document analysis and compliance evaluation tool that helps researchers and compliance professionals analyze text against predefined requirements and standards.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
