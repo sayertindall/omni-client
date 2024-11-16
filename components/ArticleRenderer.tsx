@@ -37,17 +37,14 @@ export const ArticleRenderer = ({
       {articleData.map((section, sectionIndex) => (
         <div key={sectionIndex} className="mb-8">
           <h1 className="text-3xl font-bold tracking-tight mb-4">
-            <InteractiveText
-              text={section.title}
-              type="section"
-              section={sectionIndex}
-              evaluationData={evaluationData || null}
-              onElementClick={onElementClick}
-              highlightEnabled={highlightEnabled}
-            />
+            <span
+              onClick={() => onElementClick(section.title, "section", sectionIndex)}
+              className="cursor-pointer font-medium text-gray-900 dark:text-gray-100 px-1 rounded transition-colors duration-200"
+            >
+              {section.title}
+            </span>
           </h1>
 
-          {/* Pre-split sentences */}
           <p className="leading-7 [&:not(:first-child)]:mt-6">
             {section.sentences.map((sentence, index) => (
               <InteractiveText

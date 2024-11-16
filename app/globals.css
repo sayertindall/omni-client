@@ -53,6 +53,11 @@ body {
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Score-based highlight colors - Light Theme */
+    --highlight-high: rgb(214 250 226);     /* custom green-75 */
+    --highlight-medium: rgb(254 249 195);    /* yellow-50 */
+    --highlight-low: rgb(254 226 226);       /* custom red-75 */
+    --highlight-hover: rgb(229 231 235);     /* gray-200 */
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -87,6 +92,11 @@ body {
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+     /* Score-based highlight colors - Dark Theme */
+     --highlight-high: rgb(20 83 45);         /* green-900 */
+     --highlight-medium: rgb(218 158 6);      /* custom yellow-525 */
+     --highlight-low: rgb(127 29 29);         /* red-900 */
+     --highlight-hover: rgb(55 65 81);        /* gray-700 */
   }
 }
 
