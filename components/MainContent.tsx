@@ -14,6 +14,7 @@ interface MainContentProps {
     highlightEnabled: boolean;
     onElementClick: (text: string, type: "section" | "sentence", sectionIdx: number, sentenceIdx?: number) => void;
     setHighlightEnabled: (enabled: boolean) => void;
+    onShowRequirements: () => void;
   }
   
   export function MainContent({ data, highlightEnabled, onElementClick, setHighlightEnabled }: MainContentProps) {

@@ -86,6 +86,8 @@ export default function Page() {
         highlightEnabled={highlightEnabled}
         setHighlightEnabled={setHighlightEnabled}
         onElementClick={handleElementClick}
+        onShowRequirements={handleShowRequirements} 
+
       />
       <SidePanel
         isOpen={isSidePanelOpen}
