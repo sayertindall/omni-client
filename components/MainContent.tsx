@@ -18,14 +18,14 @@ interface MainContentProps {
   
   export function MainContent({ data, highlightEnabled, onElementClick, setHighlightEnabled }: MainContentProps) {
     return (
-      <div className="container ml-10 p-4">
-        <div className="flex gap-8 mt-32">
+      <div className="container ml-6 p-4">
+        <div className="flex gap-6 mt-16">
           <div className="w-[400px] shrink-0">
             <InfoBox />
           </div>
           <div className="flex-1">
             <div className="space-y-4">
-              <div className="flex justify-end mr-[8em]">
+              <div className="flex justify-end mr-[6em]">
                 <HighlightToggle
                   enabled={highlightEnabled}
                   onToggle={() => setHighlightEnabled(!highlightEnabled)}
