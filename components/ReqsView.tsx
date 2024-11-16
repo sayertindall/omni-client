@@ -80,7 +80,7 @@ const RequirementCard: React.FC<{
     )}
   >
     <CollapsibleTrigger className="w-full" onClick={onToggle}>
-      <CardHeader className="py-3 hover:bg-gray-50 transition-colors">
+      <CardHeader className="py-3 hover:bg-muted/50 transition-colors">
         <div className="flex items-center gap-2">
           {isExpanded ? (
             <ChevronDown className="w-4 h-4" />
@@ -151,7 +151,7 @@ const CategorySection: React.FC<CategoryProps> = ({
         onOpenChange={() => toggleCategory(category)}
       >
         <CollapsibleTrigger className="w-full">
-          <CardHeader className="hover:bg-gray-50 transition-colors">
+          <CardHeader className="hover:bg-muted/50 transition-colors">
             <div className="flex items-center gap-2">
               {expandedCategories[category] ? (
                 <ChevronDown className="w-4 h-4" />
@@ -177,7 +177,7 @@ const CategorySection: React.FC<CategoryProps> = ({
                   }
                 >
                   <CollapsibleTrigger className="w-full">
-                    <div className="flex items-center gap-2 p-2 hover:bg-gray-50 rounded transition-colors">
+                    <div className="flex items-center gap-2 p-2 hover:bg-muted/50 rounded transition-colors">
                       {expandedClassifications[
                         `${category}-${classification}`
                       ] ? (
@@ -312,9 +312,9 @@ export const RequirementViewer: React.FC<RequirementViewerProps> = ({
   return (
     <ScrollArea className="h-screen">
       <div className="p-4 space-y-4">
-        <div className="sticky top-0 bg-white z-10 pb-4">
+        <div className="sticky top-0 bg-background z-10 pb-4">
           <div className="relative">
-            <Search className="absolute left-2 top-2.5 h-4 w-4 text-gray-500" />
+            <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
             <Input
               type="text"
               placeholder="Search requirements..."
