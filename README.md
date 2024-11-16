@@ -1,26 +1,30 @@
-📚 Omnipedia is a sophisticated document analysis and compliance evaluation tool that helps researchers 🔍 and compliance professionals analyze text against predefined requirements and standards ✅.
 
-## Key Features
+# Omnipedia: Automating Article Review with the Manual of Style
+
+Omnipedia is a cutting-edge document analysis and compliance evaluation tool that bridges the gap between language models and structured style guidelines. Designed for researchers, professionals, and contributors to platforms like Wikipedia, Omnipedia leverages advanced AI to automate article reviews, ensuring compliance with predefined standards while promoting efficiency and transparency in content evaluation.
+
+## 🌟 Key Features
 
 ### 🔍 Interactive Text Analysis
-- Real-time text highlighting based on compliance scores
-- Section and sentence-level analysis
-- Interactive elements for detailed evaluation viewing
+- Real-time text highlighting based on compliance scores.
+- Section and sentence-level analysis.
+- Interactive elements for exploring detailed evaluations.
 
 ### 📊 Requirements Management
-- Hierarchical view of compliance requirements
-- Categorization by:
-  - Imperative Standards
-  - Best Practices
-  - Flexible Guidelines
-- Advanced filtering and search capabilities
-
-🌐 **Live Demo**: [omnipedia-client.pages.dev](https://omnipedia-client.pages.dev/)
+- Automatically generate requirements from any style guide.
+- Categorize compliance standards into:
+  - Imperative Standards.
+  - Best Practices.
+  - Flexible Guidelines.
+- Advanced filtering, search, and hierarchical organization of requirements.
 
 ### 💡 Smart Evaluation
-- Automated scoring system
-- Color-coded compliance indicators
-- Detailed evidence and reference tracking
+- Automated scoring system with compliance thresholds.
+- Color-coded annotations:
+  - 🟥 Red: Conflicts with style guidelines.
+  - 🟨 Yellow: Neutral or unclear compliance.
+  - 🟩 Green: Meets guidelines (edited by a trusted editor).
+- Qualitative feedback with actionable recommendations.
 
 ### 🎨 User Interface
 - Dark/Light mode support
@@ -36,7 +40,21 @@
 - **Deployment**: Vercel
 - **Typography**: Geist Font Family
 
-## Getting Started
+### 🎨 User-Friendly Interface
+- Interactive visualization overlays evaluations on articulated text.
+- Dark/Light mode for accessibility and comfort.
+- Responsive design with shadcn/ui components.
+
+### 🛠️ Implementation Overview
+- Parse style guides into structured requirements (`style-guide.json`).
+- Evaluate articles against these requirements:
+  - Sentence-level evaluations with improvement suggestions.
+  - Highlight text based on compliance scores.
+- Render annotated articles with a reader-friendly overlay.
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
 - Node.js (v18 or higher)
@@ -44,78 +62,81 @@
 
 ### Installation
 
-1. Clone the repository
-```bash
-git clone https://github.com/sayertindall/omni-client.git
-cd omni-client
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sayertindall/omni-client.git
+   cd omni-client
+   ```
 
-2. Install dependencies
-```bash
-# Using pnpm (recommended)
-pnpm install
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
 
-# Or using npm
-npm install
+3. Start the development server:
+   ```bash
+   pnpm dev
+   ```
 
-# Or using yarn
-yarn install
-```
-
-3. Start the development server
-```bash
-# Using pnpm
-pnpm dev
-
-# Or using npm
-npm run dev
-
-# Or using yarn
-yarn dev
-```
-
-4. Open your browser
-Navigate to [http://localhost:3000](http://localhost:3000) to see the application running.
+4. Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
 
 ### Environment Variables
-
-Create a `.env.local` file in the root directory and add the following variables:
-
+Create a `.env.local` file and add your environment variables:
 ```env
-# Add your environment variables here
 NEXT_PUBLIC_API_URL=your_api_url
 ```
 
-### Build for Production
+---
 
-To create a production build:
-```bash
-# Using pnpm
-pnpm build
+## 🌐 Live Demo
+Experience Omnipedia: [omnipedia-client.pages.dev](https://omnipedia-client.pages.dev/)
 
-# Or using npm
-npm run build
+---
 
-# Or using yarn
-yarn build
-```
+## 📚 Related Work and Research
+Omnipedia builds on decades of research into automated content evaluation and machine learning. It introduces a novel approach by directly leveraging structured style guidelines to drive automated reviews.
+
+### References
+- Nathan Teblunthuis, 2021
+- Aaron Halfaker and R. Stuart Geiger, 2020
+- C. Estelle Smith et al., 2020
+
+---
+
+## 🛠️ Future Directions
+- Extend support for additional style guides and languages.
+- Integrate directly into content editing platforms.
+- Enable context-sensitive evaluations for topic-specific requirements.
+
+---
 
 ## Project Structure
 
 ```
 omni-client/
 ├── .git/
+├── .next/
+├── .wrangler/
+│   └── state/
+│   │   └── v3/
+│   │   │   └── workflows/
 ├── app/
+│   ├── about/
+│   │   └── page.tsx
 │   ├── api/
 │   │   └── data/
 │   │   │   └── route.ts
+│   ├── context/
+│   │   └── AppContext.tsx
 │   ├── fonts/
 │   │   ├── GeistMonoVF.woff
 │   │   └── GeistVF.woff
+│   ├── .DS_Store
 │   ├── favicon.ico
 │   ├── globals.css
 │   ├── layout.tsx
-│   └── page.tsx
+│   ├── page.tsx
+│   └── providers.tsx
 ├── components/
 │   ├── ui/
 │   │   ├── accordion.tsx
@@ -167,9 +188,14 @@ omni-client/
 │   │   ├── toggle.tsx
 │   │   └── tooltip.tsx
 │   ├── ArticleRenderer.tsx
+│   ├── Footer.tsx
+│   ├── Header.tsx
+│   ├── HeaderWrapper.tsx
 │   ├── HighlightToggle.tsx
 │   ├── InfoBox.tsx
 │   ├── InteractiveElement.tsx
+│   ├── MainContent.tsx
+│   ├── ModeToggle.tsx
 │   ├── ReqsView.tsx
 │   ├── RequirementViewer.tsx
 │   └── SidePanel.tsx
@@ -180,10 +206,14 @@ omni-client/
 ├── node_modules/
 ├── types/
 │   └── index.tsx
+├── .DS_Store
+├── .env
+├── .env.example
 ├── .eslintrc.json
 ├── .gitignore
 ├── components.json
 ├── design.md
+├── next-env.d.ts
 ├── next.config.mjs
 ├── package-lock.json
 ├── package.json
@@ -194,15 +224,8 @@ omni-client/
 ├── tailwind.config.ts
 ├── tsconfig.json
 └── wrangler.toml
+
 ```
-### Deploy on Vercel
 
-The easiest way to deploy your Omnipedia client is to use Vercel:
-
-1. Push your code to a GitHub repository
-2. Import your project into Vercel
-3. Add necessary environment variables
-4. Deploy
-
-For more details on deployment, check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment).
-
+## 📜 Acknowledgments
+Omnipedia is the result of collaborative efforts by researchers and developers across multiple disciplines. We thank the Wikipedia community for their ongoing contributions to structured style guidelines and knowledge curation.
