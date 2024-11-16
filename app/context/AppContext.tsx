@@ -1,3 +1,8 @@
+/**
+ * @title App Context
+ * @fileoverview Context for the app
+ * @path /app/context/AppContext.tsx
+ */
 "use client";
 
 import React, { createContext, useContext, useState } from 'react';
