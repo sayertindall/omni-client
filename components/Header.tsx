@@ -26,9 +26,9 @@ interface HeaderProps {
   onBackToArticle: () => void;
   setSidePanelOpen: (open: boolean) => void;
   onHomeClick: () => void;
-  selectedArticle: string;
+  selectedArticle?: string;
   setSelectedArticle: (value: string) => void;
-  selectedSource: "wikipedia" | "wikicrow";
+  selectedSource?: "wikipedia" | "wikicrow";
   setSelectedSource: (value: "wikipedia" | "wikicrow") => void;
 }
 
@@ -38,9 +38,9 @@ export function Header({
   onBackToArticle,
   setSidePanelOpen,
   onHomeClick,
-  selectedArticle,
+  selectedArticle = "ABCC11",
   setSelectedArticle,
-  selectedSource,
+  selectedSource = "wikipedia",
   setSelectedSource
 }: HeaderProps) {
   const pathname = usePathname();
@@ -75,35 +75,39 @@ export function Header({
             <span className="text-lg font-bold text-primary">Omnipedia</span>
           </Link>
 
-          {/* Dropdowns next to logo */}
-          <Select
-            value={selectedArticle}
-            onValueChange={handleArticleChange}
-          >
-            <SelectTrigger className="w-[140px]">
-              <SelectValue placeholder="Select article" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="ABCC11">ABCC11</SelectItem>
-              <SelectItem value="APRT">APRT</SelectItem>
-              <SelectItem value="B3GAT1">B3GAT1</SelectItem>
-              <SelectItem value="GRIA2">GRIA2</SelectItem>
-              <SelectItem value="NEW_GENE">NEW_GENE</SelectItem>
-            </SelectContent>
-          </Select>
-          
-          <Select
-            value={selectedSource}
-            onValueChange={handleSourceChange}
-          >
-            <SelectTrigger className="w-[140px]">
-              <SelectValue placeholder="Select source" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="wikipedia">Wikipedia</SelectItem>
-              <SelectItem value="wikicrow">WikiCrow</SelectItem>
-            </SelectContent>
-          </Select>
+          {/* Only show dropdowns on home page */}
+          {isHomePage && (
+            <>
+              <Select
+                value={selectedArticle || "ABCC11"}
+                onValueChange={handleArticleChange}
+              >
+                <SelectTrigger className="w-[140px]">
+                  <SelectValue placeholder="ABCC11" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="ABCC11">ABCC11</SelectItem>
+                  <SelectItem value="APRT">APRT</SelectItem>
+                  <SelectItem value="B3GAT1">B3GAT1</SelectItem>
+                  <SelectItem value="GRIA2">GRIA2</SelectItem>
+                  <SelectItem value="NEW_GENE">NEW_GENE</SelectItem>
+                </SelectContent>
+              </Select>
+              
+              <Select
+                value={selectedSource}
+                onValueChange={handleSourceChange}
+              >
+                <SelectTrigger className="w-[140px]">
+                  <SelectValue placeholder="Select source" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="wikipedia">Wikipedia</SelectItem>
+                  <SelectItem value="wikicrow">WikiCrow</SelectItem>
+                </SelectContent>
+              </Select>
+            </>
+          )}
         </div>
 
         {/* Navigation and Actions */}

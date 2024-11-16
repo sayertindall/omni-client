@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { SidePanel } from "@/components/SidePanel";
 import { RequirementViewer } from "@/components/ReqsView";
 import { EvaluationData, convertCacheToEvalData } from "@/lib/eval";
 import { getData } from "@/lib/loader";
 import { useApp } from "@/app/context/AppContext";
 import { MainContent } from "@/components/MainContent";
+import { LoadingScreen } from "@/components/LoadingScreen";
 
 export default function Page() {
   const { 
@@ -34,6 +35,19 @@ export default function Page() {
   const data = getData(selectedArticle);
   const error = !data;
 
+  // Add loading state
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    if (data) {
+      setIsLoading(false);
+    }
+  }, [data]);
+
+  // Show loading screen while data is being fetched
+  if (isLoading) return <LoadingScreen />;
+  if (error) return <div>Error loading data</div>;
+
   const handleElementClick = (
     text: string,
     type: "section" | "sentence",
@@ -56,8 +70,6 @@ export default function Page() {
       sentenceIndex: sentenceDataIndex,
     });
   };
-
-  if (error) return <div>Error loading data</div>;
 
   if (showRequirements) {
     return (

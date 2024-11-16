@@ -16,6 +16,8 @@ interface AppContextType {
   setShowRequirements: (show: boolean) => void;
   isSidePanelOpen: boolean;
   setSidePanelOpen: (open: boolean) => void;
+  isLoading: boolean;
+  setIsLoading: (loading: boolean) => void;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -23,9 +25,9 @@ const AppContext = createContext<AppContextType | undefined>(undefined);
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const [showRequirements, setShowRequirements] = useState(false);
   const [isSidePanelOpen, setSidePanelOpen] = useState(false);
-  const [selectedArticle, setSelectedArticle] = useState("");
+  const [selectedArticle, setSelectedArticle] = useState("ABCC11");
   const [selectedSource, setSelectedSource] = useState<"wikipedia" | "wikicrow">("wikipedia");
-
+  const [isLoading, setIsLoading] = useState(true);
 
   const value = {
     showRequirements,
@@ -35,7 +37,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     selectedArticle,
     setSelectedArticle,
     selectedSource,
-    setSelectedSource
+    setSelectedSource,
+    isLoading,
+    setIsLoading,
   };
 
   return (
