@@ -12,7 +12,6 @@ import { SidePanel } from "@/components/SidePanel";
 import { RequirementViewer } from "@/components/ReqsView";
 import useSWR from "swr";
 import { EvaluationData } from "@/lib/eval";
-import { Header } from "@/components/Header";
 
 export default function Page() {
   const [selectedText, setSelectedText] = useState<string | null>(null);
@@ -70,31 +69,17 @@ export default function Page() {
 
   if (showRequirements) {
     return (
-      <>
-        <Header 
-          onShowRequirements={handleShowRequirements}
-          showRequirements={showRequirements}
-          onBackToArticle={() => setShowRequirements(false)}
-          setSidePanelOpen={setSidePanelOpen}
+      <div className="min-h-screen">
+        <RequirementViewer
+          focusedId={focusedRequirement}
+          onRequirementClick={(id) => setFocusedRequirement(id)}
         />
-        <div className="min-h-screen">
-          <RequirementViewer
-            focusedId={focusedRequirement}
-            onRequirementClick={(id) => setFocusedRequirement(id)}
-          />
-        </div>
-      </>
+      </div>
     );
   }
 
   return (
     <>
-      <Header 
-        onShowRequirements={handleShowRequirements}
-        showRequirements={showRequirements}
-        onBackToArticle={() => setShowRequirements(false)}
-        setSidePanelOpen={setSidePanelOpen}
-      />
       <MainContent
         data={data}
         highlightEnabled={highlightEnabled}

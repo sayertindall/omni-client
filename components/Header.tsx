@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * @title Header
  * @fileoverview Component that displays the header with navigation and theme toggle.

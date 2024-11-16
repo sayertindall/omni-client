@@ -1,3 +1,9 @@
+/**
+ * @title Main Content
+ * @fileoverview Main content component that handles article viewing, requirements, and evaluation data
+ * @path /components/MainContent.tsx
+ */
+
 import { InfoBox } from "@/components/InfoBox";
 import { HighlightToggle } from "@/components/HighlightToggle";
 import { ArticleRenderer } from "@/components/ArticleRenderer";
