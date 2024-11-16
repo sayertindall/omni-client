@@ -1,7 +1,15 @@
+/**
+ * @title Layout
+ * @fileoverview Root layout component that sets up fonts and provides the base HTML structure
+ * @path app/layout.tsx
+ */
+
 import type { Metadata } from "next";
 import { Inter, Merriweather } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Header } from "@/components/Header"
+import { Footer } from "@/components/Footer"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -38,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${merriweather.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${merriweather.variable} antialiased min-h-screen flex flex-col`}
       >
         {children}
       </body>

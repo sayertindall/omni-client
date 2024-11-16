@@ -1,3 +1,9 @@
+/**
+ * @title InteractiveText
+ * @fileoverview Component that displays interactive text with evaluation data
+ * @path /components/InteractiveElement.tsx
+ */
+
 import React from "react";
 import {
   EvaluationData,

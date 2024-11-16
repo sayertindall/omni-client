@@ -1,3 +1,9 @@
+/**
+ * @title ArticleRenderer
+ * @fileoverview Component that renders the article with interactive elements
+ * @path /components/ArticleRenderer.tsx
+ */
+
 import { EvaluationData } from "@/lib/eval";
 import React from "react";
 import { InteractiveText } from "./InteractiveElement";

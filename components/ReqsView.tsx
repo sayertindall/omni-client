@@ -1,3 +1,9 @@
+/**
+ * @title RequirementViewer
+ * @fileoverview Component that displays the requirements data
+ * @path /components/RequirementViewer.tsx
+ */
+
 import React, { useState, useMemo, useCallback } from "react";
 import { ChevronRight, ChevronDown, Search } from "lucide-react";
 import {

@@ -1,3 +1,9 @@
+/**
+ * @title InfoBox
+ * @fileoverview Component that displays information about the interactive article guide
+ * @path /components/InfoBox.tsx
+ */
+
 import React from "react";
 import {
   Card,
