@@ -1,3 +1,9 @@
+/**
+ * @title InteractiveText
+ * @fileoverview Component that displays interactive text with evaluation data
+ * @path /components/InteractiveElement.tsx
+ */
+
 import React from "react";
 import {
   EvaluationData,
@@ -63,13 +69,13 @@ export const InteractiveText: React.FC<{
   const getScoreHighlightClass = (score: number) => {
     if (score >= 0.8) {
       // High score: highlight green
-      return "bg-green-100 dark:bg-green-900";
+      return "bg-[var(--highlight-high)]";
     } else if (score >= 0.5) {
       // Medium score: highlight yellow
-      return "bg-yellow-100 dark:bg-yellow-900";
+      return "bg-[var(--highlight-medium)]";
     } else if (score > 0) {
       // Low score: highlight red
-      return "bg-red-100 dark:bg-red-900";
+      return "bg-[var(--highlight-low)]";
     }
     // If score is 0 or highlight not enabled, no highlight
     return "";

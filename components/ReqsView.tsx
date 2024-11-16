@@ -1,3 +1,9 @@
+/**
+ * @title RequirementViewer
+ * @fileoverview Component that displays the requirements data
+ * @path /components/RequirementViewer.tsx
+ */
+
 import React, { useState, useMemo, useCallback } from "react";
 import { ChevronRight, ChevronDown, Search } from "lucide-react";
 import {
@@ -16,17 +22,8 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import { RequirementsData, RequirementGroup, Requirement } from "@/lib/eval";
 import requirementsData from "@/lib/data/requirements.json";
-
-export interface Requirement {
-  id: string;
-  description: string;
-  reference: string;
-  category: string;
-  classification: string;
-  where: string;
-  when: string;
-}
 
 interface RequirementViewerProps {
   focusedId?: string;
@@ -74,7 +71,7 @@ const RequirementCard: React.FC<{
     )}
   >
     <CollapsibleTrigger className="w-full" onClick={onToggle}>
-      <CardHeader className="py-3 hover:bg-gray-50 transition-colors">
+      <CardHeader className="py-3 hover:bg-muted/50 transition-colors">
         <div className="flex items-center gap-2">
           {isExpanded ? (
             <ChevronDown className="w-4 h-4" />
@@ -145,7 +142,7 @@ const CategorySection: React.FC<CategoryProps> = ({
         onOpenChange={() => toggleCategory(category)}
       >
         <CollapsibleTrigger className="w-full">
-          <CardHeader className="hover:bg-gray-50 transition-colors">
+          <CardHeader className="hover:bg-muted/50 transition-colors">
             <div className="flex items-center gap-2">
               {expandedCategories[category] ? (
                 <ChevronDown className="w-4 h-4" />
@@ -171,7 +168,7 @@ const CategorySection: React.FC<CategoryProps> = ({
                   }
                 >
                   <CollapsibleTrigger className="w-full">
-                    <div className="flex items-center gap-2 p-2 hover:bg-gray-50 rounded transition-colors">
+                    <div className="flex items-center gap-2 p-2 hover:bg-muted/50 rounded transition-colors">
                       {expandedClassifications[
                         `${category}-${classification}`
                       ] ? (
@@ -233,29 +230,15 @@ export const RequirementViewer: React.FC<RequirementViewerProps> = ({
   }>({});
 
   const groupedRequirements = useMemo(() => {
-    const requirements = requirementsData as {
-      groups: {
-        [category: string]: Requirement[];
-      };
-    };
-
-    const grouped: {
-      [category: string]: {
-        [classification: string]: Requirement[];
-      };
-    } = {};
-
-    Object.entries(requirements.groups).forEach(([category, reqs]) => {
-      grouped[category] = {};
-      reqs.forEach((req: Requirement) => {
-        if (!grouped[category][req.classification]) {
-          grouped[category][req.classification] = [];
-        }
-        grouped[category][req.classification].push(req);
-      });
-    });
-
-    return grouped;
+    const reqs = requirementsData as RequirementsData;
+    return reqs.groups.reduce((acc, group) => {
+      acc[group.category] = group.requirements.reduce((classAcc, req) => {
+        classAcc[req.classification] = classAcc[req.classification] || [];
+        classAcc[req.classification].push(req);
+        return classAcc;
+      }, {} as { [classification: string]: Requirement[] });
+      return acc;
+    }, {} as { [category: string]: { [classification: string]: Requirement[] } });
   }, []);
 
   const toggleCategory = useCallback((category: string) => {
@@ -306,9 +289,9 @@ export const RequirementViewer: React.FC<RequirementViewerProps> = ({
   return (
     <ScrollArea className="h-screen">
       <div className="p-4 space-y-4">
-        <div className="sticky top-0 bg-white z-10 pb-4">
+        <div className="sticky top-0 bg-background z-10 pb-4">
           <div className="relative">
-            <Search className="absolute left-2 top-2.5 h-4 w-4 text-gray-500" />
+            <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
             <Input
               type="text"
               placeholder="Search requirements..."

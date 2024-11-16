@@ -1,2423 +1,870 @@
 {
   "sections": [
     {
+      "index": 1,
+      "title": "GRIA2",
+      "sentence_evaluations": [],
+      "requirement_evaluations": [],
+      "meta_notes": ""
+    },
+    {
       "index": 2,
       "title": "Overview",
       "sentence_evaluations": [
         {
-          "index": 1,
+          "index": 0,
           "sentence": "The GRIA2 gene encodes the glutamate ionotropic receptor AMPA type subunit 2, commonly referred to as GluA2, which is a critical component of AMPA receptors.",
           "requirement_evaluations": [
             {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviations and full names.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and the full gene name are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions the full gene name.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "The sentence uses the full gene name along with the abbreviation 'GluA2'.",
-              "reasoning": "Partial adherence; while the abbreviation is introduced, the full gene name is used, which is acceptable but using abbreviations is preferred.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions a human gene name.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "The human gene name 'GRIA2' is written in capitals.",
-              "reasoning": "Complete adherence to the requirement by correctly capitalizing the human gene name.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Consider italicizing gene symbols 'GRIA2' and the full gene name for full adherence."
+          "meta_notes": ""
         },
         {
           "index": 1,
-          "sentence": "The GRIA2 gene encodes the glutamate ionotropic receptor AMPA type subunit 2, commonly referred to as GluA2, which is a critical component of AMPA receptors.",
+          "sentence": "These receptors are a subtype of ionotropic glutamate receptors that mediate fast excitatory synaptic transmission in the central nervous system.",
           "requirement_evaluations": [
             {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviations and full names.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and the full gene name are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions the full gene name.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "The sentence uses the full gene name along with the abbreviation 'GluA2'.",
-              "reasoning": "Partial adherence; while the abbreviation is introduced, the full gene name is used, which is acceptable but using abbreviations is preferred.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions a human gene name.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "The human gene name 'GRIA2' is written in capitals.",
-              "reasoning": "Complete adherence to the requirement by correctly capitalizing the human gene name.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Consider italicizing gene symbols 'GRIA2' and the full gene name for full adherence."
+          "meta_notes": ""
         },
         {
-          "index": 1,
-          "sentence": "The GRIA2 gene encodes the glutamate ionotropic receptor AMPA type subunit 2, commonly referred to as GluA2, which is a critical component of AMPA receptors.",
+          "index": 2,
+          "sentence": "The GluA2 protein plays a pivotal role in determining the ion permeability and conductance properties of AMPA receptors, particularly through RNA editing that affects calcium ion permeability (Priya2014Nuclear; Isaac2007The).",
           "requirement_evaluations": [
             {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviations and full names.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and the full gene name are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions the full gene name.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "The sentence uses the full gene name along with the abbreviation 'GluA2'.",
-              "reasoning": "Partial adherence; while the abbreviation is introduced, the full gene name is used, which is acceptable but using abbreviations is preferred.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions a human gene name.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "The human gene name 'GRIA2' is written in capitals.",
-              "reasoning": "Complete adherence to the requirement by correctly capitalizing the human gene name.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Consider italicizing gene symbols 'GRIA2' and the full gene name for full adherence."
+          "meta_notes": ""
         },
         {
-          "index": 1,
-          "sentence": "The GRIA2 gene encodes the glutamate ionotropic receptor AMPA type subunit 2, commonly referred to as GluA2, which is a critical component of AMPA receptors.",
+          "index": 3,
+          "sentence": "Structurally, GluA2 forms a tetrameric assembly with other subunits, contributing to the receptor's 'Y'-shaped architecture, which is essential for its function in synaptic plasticity and neurotransmission (Twomey2017Channel).",
           "requirement_evaluations": [
             {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviations and full names.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and the full gene name are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions the full gene name.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "The sentence uses the full gene name along with the abbreviation 'GluA2'.",
-              "reasoning": "Partial adherence; while the abbreviation is introduced, the full gene name is used, which is acceptable but using abbreviations is preferred.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions a human gene name.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "The human gene name 'GRIA2' is written in capitals.",
-              "reasoning": "Complete adherence to the requirement by correctly capitalizing the human gene name.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Consider italicizing gene symbols 'GRIA2' and the full gene name for full adherence."
+          "meta_notes": ""
         },
         {
-          "index": 1,
-          "sentence": "The GRIA2 gene encodes the glutamate ionotropic receptor AMPA type subunit 2, commonly referred to as GluA2, which is a critical component of AMPA receptors.",
+          "index": 4,
+          "sentence": "The gene's expression and the protein's interactions with auxiliary subunits are crucial for the receptor's trafficking and function, impacting processes such as learning and memory (Chen2014Interaction; Schwenk2012HighResolution).",
           "requirement_evaluations": [
             {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviations and full names.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and the full gene name are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions the full gene name.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "The sentence uses the full gene name along with the abbreviation 'GluA2'.",
-              "reasoning": "Partial adherence; while the abbreviation is introduced, the full gene name is used, which is acceptable but using abbreviations is preferred.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions a human gene name.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "The human gene name 'GRIA2' is written in capitals.",
-              "reasoning": "Complete adherence to the requirement by correctly capitalizing the human gene name.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Consider italicizing gene symbols 'GRIA2' and the full gene name for full adherence."
+          "meta_notes": ""
         },
         {
-          "index": 1,
-          "sentence": "The GRIA2 gene encodes the glutamate ionotropic receptor AMPA type subunit 2, commonly referred to as GluA2, which is a critical component of AMPA receptors.",
+          "index": 5,
+          "sentence": "Mutations in GRIA2 have been linked to various neurodevelopmental and neurodegenerative disorders, highlighting its clinical significance (Salpietro2019AMPA; Capauto2018A).",
           "requirement_evaluations": [
             {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviations and full names.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and the full gene name are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions the full gene name.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "The sentence uses the full gene name along with the abbreviation 'GluA2'.",
-              "reasoning": "Partial adherence; while the abbreviation is introduced, the full gene name is used, which is acceptable but using abbreviations is preferred.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions a human gene name.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "The human gene name 'GRIA2' is written in capitals.",
-              "reasoning": "Complete adherence to the requirement by correctly capitalizing the human gene name.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Consider italicizing gene symbols 'GRIA2' and the full gene name for full adherence."
+          "meta_notes": ""
         }
       ],
       "requirement_evaluations": [
         {
-          "requirement_id": "30",
+          "requirement_id": "R1",
           "requirement_category": "Content",
           "classification": "Imperative Standards",
           "applicable": true,
-          "applicability_reasoning": "Applicable because the section describes the function of the transcribed protein.",
+          "applicability_reasoning": "The article covers the human gene/protein but does not mention orthologs in other species.",
+          "reasoning": "The section discusses human gene/protein but lacks information on orthologs.",
+          "score": 0.5,
+          "confidence": 0.9,
+          "evidence": "Orthologs in other species not mentioned.",
+          "reasoning_detail": "Partial adherence; human gene/protein included, orthologs missing."
+        },
+        {
+          "requirement_id": "R25",
+          "requirement_category": "Structure",
+          "classification": "Imperative Standards",
+          "applicable": true,
+          "applicability_reasoning": "First sentence defines the article's scope.",
+          "reasoning": "The first sentence clearly defines the gene and protein.",
           "score": 1.0,
           "confidence": 0.95,
-          "evidence": "The section explains the role of GluA2 in AMPA receptors, its structural features, and its function in synaptic transmission and plasticity.",
-          "reasoning": "Fully meets the requirement by providing comprehensive details on the protein's function.",
-          "overlap_notes": null
+          "evidence": "Provides a comprehensive definition.",
+          "reasoning_detail": "Fully meets the requirement."
+        },
+        {
+          "requirement_id": "R30",
+          "requirement_category": "Content",
+          "classification": "Imperative Standards",
+          "applicable": true,
+          "applicability_reasoning": "Section includes description of protein function.",
+          "reasoning": "Function of the transcribed protein is described.",
+          "score": 1.0,
+          "confidence": 0.95,
+          "evidence": "Description of GluA2 function.",
+          "reasoning_detail": "Fully meets the requirement."
+        },
+        {
+          "requirement_id": "R32",
+          "requirement_category": "Content",
+          "classification": "Imperative Standards",
+          "applicable": true,
+          "applicability_reasoning": "Section lists diseases related to mutations.",
+          "reasoning": "Mutations linked to disorders are mentioned.",
+          "score": 1.0,
+          "confidence": 0.95,
+          "evidence": "Mutations in GRIA2 linked to disorders.",
+          "reasoning_detail": "Fully meets the requirement."
+        },
+        {
+          "requirement_id": "R34",
+          "requirement_category": "Structure",
+          "classification": "Imperative Standards",
+          "applicable": true,
+          "applicability_reasoning": "Article does not link to Wikidata item in content.",
+          "reasoning": "No mention of Wikidata linkage.",
+          "score": 0.0,
+          "confidence": 1.0,
+          "evidence": "No link to Wikidata in content.",
+          "reasoning_detail": "Does not meet the requirement."
         }
       ],
-      "meta_notes": "Consider moving the discussion of diseases linked to GRIA2 mutations to the 'Clinical significance' section as per Requirement 32."
+      "meta_notes": "The section includes the article scope and clinical significance but lacks information on orthologs. Consider adding information on orthologs to fully meet the requirements."
     },
     {
       "index": 3,
       "title": "Structure",
       "sentence_evaluations": [
         {
-          "index": 1,
+          "index": 0,
           "sentence": "The GRIA2 gene encodes the GluA2 subunit of AMPA receptors, which are ionotropic glutamate receptors crucial for excitatory synaptic transmission.",
           "requirement_evaluations": [
             {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviations and full names.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and the full gene name are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "The sentence uses the abbreviation 'GRIA2' instead of the full gene name.",
-              "reasoning": "Complete adherence to the best practice.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions a human gene name.",
-              "score": 1.0,
-              "confidence": 1.0,
-              "evidence": "The gene name 'GRIA2' is correctly capitalized.",
-              "reasoning": "Complete adherence to the requirement by correctly capitalizing the human gene name.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence to the imperative standard as statements are not backed by specific sources.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Consider adding inline citations to support the factual statements and italicizing gene symbols for full adherence."
+          "meta_notes": ""
         },
         {
-          "index": 2,
+          "index": 1,
           "sentence": "The primary structure of GluA2 consists of a sequence of amino acids that form the protein, which includes specific residues that play critical roles in its function, such as the Q/R-site glutamines that influence ion channel conductance (Twomey2017Channel).",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the citation provided is improperly formatted.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "The citation '(Twomey2017Channel)' does not follow standard citation formats.",
-              "reasoning": "Partial adherence; the presence of a citation shows partial compliance, but incorrect formatting affects the score.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Ensure that citations are properly formatted according to standard guidelines."
-        },
-        {
-          "index": 3,
-          "sentence": "The secondary structure of GluA2 includes alpha helices and beta sheets that contribute to the formation of its ligand-binding and transmembrane domains.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence as the sentence lacks a citation to support the information.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Add citations to support the structural details mentioned."
-        },
-        {
-          "index": 4,
-          "sentence": "The tertiary structure involves the folding of these elements into a three-dimensional shape, forming distinct domains such as the amino-terminal domain (ATD), ligand-binding domain (LBD), and transmembrane domain (TMD) (Twomey2017Channel; D\u00fcrr2014Structure).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the citations are improperly formatted.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citations '(Twomey2017Channel; D\u00fcrr2014Structure)' do not adhere to standard citation formats.",
-              "reasoning": "Partial adherence due to incorrect citation formatting.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Review and correct citation formats for compliance."
-        },
-        {
-          "index": 5,
-          "sentence": "In its quaternary structure, GluA2 forms a tetrameric assembly with other subunits, creating a 'Y'-shaped architecture.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence presents factual information without a citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No citation is provided for the structural information.",
-              "reasoning": "No adherence as factual statements are not supported by citations.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Include citations to support the description of the quaternary structure."
-        },
-        {
-          "index": 6,
-          "sentence": "The ATDs form the top of the 'Y', the LBDs are located below, and the TMD forms the base, consisting of three membrane-spanning helices and a re-entrant pore loop (Twomey2017Channel).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(Twomey2017Channel)' does not follow standard formats.",
-              "reasoning": "Partial adherence; citation is present but not correctly formatted.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Correct the citation format for compliance."
-        },
-        {
-          "index": 7,
-          "sentence": "Post-translational modifications such as phosphorylation and glycosylation affect the receptor's function and trafficking.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence lacks an inline citation for factual information.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No citation is provided to support the statements.",
-              "reasoning": "No adherence due to absence of supporting citations.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Provide citations for the post-translational modifications mentioned."
-        },
-        {
-          "index": 8,
-          "sentence": "Splice variants of GluA2 can alter the receptor's properties and localization, impacting its physiological roles (D\u00fcrr2014Structure).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(D\u00fcrr2014Structure)' is not properly formatted.",
-              "reasoning": "Partial adherence; the citation exists but is not formatted according to standards.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Ensure proper citation formatting for consistency."
-        },
-        {
-          "index": 1,
-          "sentence": "The GRIA2 gene encodes the GluA2 subunit of AMPA receptors, which are ionotropic glutamate receptors crucial for excitatory synaptic transmission.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviations and full names.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and the full gene name are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "The sentence uses the abbreviation 'GRIA2' instead of the full gene name.",
-              "reasoning": "Complete adherence to the best practice.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions a human gene name.",
-              "score": 1.0,
-              "confidence": 1.0,
-              "evidence": "The gene name 'GRIA2' is correctly capitalized.",
-              "reasoning": "Complete adherence to the requirement by correctly capitalizing the human gene name.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence to the imperative standard as statements are not backed by specific sources.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Consider adding inline citations to support the factual statements and italicizing gene symbols for full adherence."
+          "meta_notes": ""
         },
         {
           "index": 2,
-          "sentence": "The primary structure of GluA2 consists of a sequence of amino acids that form the protein, which includes specific residues that play critical roles in its function, such as the Q/R-site glutamines that influence ion channel conductance (Twomey2017Channel).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the citation provided is improperly formatted.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "The citation '(Twomey2017Channel)' does not follow standard citation formats.",
-              "reasoning": "Partial adherence; the presence of a citation shows partial compliance, but incorrect formatting affects the score.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Ensure that citations are properly formatted according to standard guidelines."
-        },
-        {
-          "index": 3,
           "sentence": "The secondary structure of GluA2 includes alpha helices and beta sheets that contribute to the formation of its ligand-binding and transmembrane domains.",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence as the sentence lacks a citation to support the information.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Add citations to support the structural details mentioned."
-        },
-        {
-          "index": 4,
-          "sentence": "The tertiary structure involves the folding of these elements into a three-dimensional shape, forming distinct domains such as the amino-terminal domain (ATD), ligand-binding domain (LBD), and transmembrane domain (TMD) (Twomey2017Channel; D\u00fcrr2014Structure).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the citations are improperly formatted.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citations '(Twomey2017Channel; D\u00fcrr2014Structure)' do not adhere to standard citation formats.",
-              "reasoning": "Partial adherence due to incorrect citation formatting.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Review and correct citation formats for compliance."
-        },
-        {
-          "index": 5,
-          "sentence": "In its quaternary structure, GluA2 forms a tetrameric assembly with other subunits, creating a 'Y'-shaped architecture.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence presents factual information without a citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No citation is provided for the structural information.",
-              "reasoning": "No adherence as factual statements are not supported by citations.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Include citations to support the description of the quaternary structure."
-        },
-        {
-          "index": 6,
-          "sentence": "The ATDs form the top of the 'Y', the LBDs are located below, and the TMD forms the base, consisting of three membrane-spanning helices and a re-entrant pore loop (Twomey2017Channel).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(Twomey2017Channel)' does not follow standard formats.",
-              "reasoning": "Partial adherence; citation is present but not correctly formatted.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Correct the citation format for compliance."
-        },
-        {
-          "index": 7,
-          "sentence": "Post-translational modifications such as phosphorylation and glycosylation affect the receptor's function and trafficking.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence lacks an inline citation for factual information.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No citation is provided to support the statements.",
-              "reasoning": "No adherence due to absence of supporting citations.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Provide citations for the post-translational modifications mentioned."
-        },
-        {
-          "index": 8,
-          "sentence": "Splice variants of GluA2 can alter the receptor's properties and localization, impacting its physiological roles (D\u00fcrr2014Structure).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(D\u00fcrr2014Structure)' is not properly formatted.",
-              "reasoning": "Partial adherence; the citation exists but is not formatted according to standards.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Ensure proper citation formatting for consistency."
-        },
-        {
-          "index": 1,
-          "sentence": "The GRIA2 gene encodes the GluA2 subunit of AMPA receptors, which are ionotropic glutamate receptors crucial for excitatory synaptic transmission.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviations and full names.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and the full gene name are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "The sentence uses the abbreviation 'GRIA2' instead of the full gene name.",
-              "reasoning": "Complete adherence to the best practice.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions a human gene name.",
-              "score": 1.0,
-              "confidence": 1.0,
-              "evidence": "The gene name 'GRIA2' is correctly capitalized.",
-              "reasoning": "Complete adherence to the requirement by correctly capitalizing the human gene name.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence to the imperative standard as statements are not backed by specific sources.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Consider adding inline citations to support the factual statements and italicizing gene symbols for full adherence."
-        },
-        {
-          "index": 2,
-          "sentence": "The primary structure of GluA2 consists of a sequence of amino acids that form the protein, which includes specific residues that play critical roles in its function, such as the Q/R-site glutamines that influence ion channel conductance (Twomey2017Channel).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the citation provided is improperly formatted.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "The citation '(Twomey2017Channel)' does not follow standard citation formats.",
-              "reasoning": "Partial adherence; the presence of a citation shows partial compliance, but incorrect formatting affects the score.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Ensure that citations are properly formatted according to standard guidelines."
+          "meta_notes": ""
         },
         {
           "index": 3,
-          "sentence": "The secondary structure of GluA2 includes alpha helices and beta sheets that contribute to the formation of its ligand-binding and transmembrane domains.",
+          "sentence": "The tertiary structure involves the folding of these elements into a three-dimensional shape, forming distinct domains such as the amino-terminal domain (ATD), ligand-binding domain (LBD), and transmembrane domain (TMD) (Twomey2017Channel; Durr2014Structure).",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains factual information without an inline citation.",
-              "score": 0.0,
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
               "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence as the sentence lacks a citation to support the information.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Add citations to support the structural details mentioned."
+          "meta_notes": ""
         },
         {
           "index": 4,
-          "sentence": "The tertiary structure involves the folding of these elements into a three-dimensional shape, forming distinct domains such as the amino-terminal domain (ATD), ligand-binding domain (LBD), and transmembrane domain (TMD) (Twomey2017Channel; D\u00fcrr2014Structure).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the citations are improperly formatted.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citations '(Twomey2017Channel; D\u00fcrr2014Structure)' do not adhere to standard citation formats.",
-              "reasoning": "Partial adherence due to incorrect citation formatting.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Review and correct citation formats for compliance."
-        },
-        {
-          "index": 5,
           "sentence": "In its quaternary structure, GluA2 forms a tetrameric assembly with other subunits, creating a 'Y'-shaped architecture.",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence presents factual information without a citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No citation is provided for the structural information.",
-              "reasoning": "No adherence as factual statements are not supported by citations.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Include citations to support the description of the quaternary structure."
-        },
-        {
-          "index": 6,
-          "sentence": "The ATDs form the top of the 'Y', the LBDs are located below, and the TMD forms the base, consisting of three membrane-spanning helices and a re-entrant pore loop (Twomey2017Channel).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(Twomey2017Channel)' does not follow standard formats.",
-              "reasoning": "Partial adherence; citation is present but not correctly formatted.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Correct the citation format for compliance."
-        },
-        {
-          "index": 7,
-          "sentence": "Post-translational modifications such as phosphorylation and glycosylation affect the receptor's function and trafficking.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence lacks an inline citation for factual information.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No citation is provided to support the statements.",
-              "reasoning": "No adherence due to absence of supporting citations.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Provide citations for the post-translational modifications mentioned."
-        },
-        {
-          "index": 8,
-          "sentence": "Splice variants of GluA2 can alter the receptor's properties and localization, impacting its physiological roles (D\u00fcrr2014Structure).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(D\u00fcrr2014Structure)' is not properly formatted.",
-              "reasoning": "Partial adherence; the citation exists but is not formatted according to standards.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Ensure proper citation formatting for consistency."
-        },
-        {
-          "index": 1,
-          "sentence": "The GRIA2 gene encodes the GluA2 subunit of AMPA receptors, which are ionotropic glutamate receptors crucial for excitatory synaptic transmission.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviations and full names.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and the full gene name are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "The sentence uses the abbreviation 'GRIA2' instead of the full gene name.",
-              "reasoning": "Complete adherence to the best practice.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions a human gene name.",
-              "score": 1.0,
-              "confidence": 1.0,
-              "evidence": "The gene name 'GRIA2' is correctly capitalized.",
-              "reasoning": "Complete adherence to the requirement by correctly capitalizing the human gene name.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence to the imperative standard as statements are not backed by specific sources.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Consider adding inline citations to support the factual statements and italicizing gene symbols for full adherence."
-        },
-        {
-          "index": 1,
-          "sentence": "The GRIA2 gene encodes the GluA2 subunit of AMPA receptors, which are ionotropic glutamate receptors crucial for excitatory synaptic transmission.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviations and full names.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and the full gene name are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation.",
-              "score": 1.0,
-              "confidence": 1.0,
-              "evidence": "The sentence uses the abbreviation 'GRIA2' instead of the full gene name.",
-              "reasoning": "Complete adherence to the best practice.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions a human gene name.",
-              "score": 1.0,
-              "confidence": 1.0,
-              "evidence": "The gene name 'GRIA2' is correctly capitalized.",
-              "reasoning": "Complete adherence to the requirement by correctly capitalizing the human gene name.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence to the imperative standard as statements are not backed by specific sources.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Consider adding inline citations to support the factual statements and italicizing gene symbols for full adherence."
-        },
-        {
-          "index": 2,
-          "sentence": "The primary structure of GluA2 consists of a sequence of amino acids that form the protein, which includes specific residues that play critical roles in its function, such as the Q/R-site glutamines that influence ion channel conductance (Twomey2017Channel).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the citation provided is improperly formatted.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "The citation '(Twomey2017Channel)' does not follow standard citation formats.",
-              "reasoning": "Partial adherence; the presence of a citation shows partial compliance, but incorrect formatting affects the score.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Ensure that citations are properly formatted according to standard guidelines."
-        },
-        {
-          "index": 3,
-          "sentence": "The secondary structure of GluA2 includes alpha helices and beta sheets that contribute to the formation of its ligand-binding and transmembrane domains.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence as the sentence lacks a citation to support the information.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Add citations to support the structural details mentioned."
-        },
-        {
-          "index": 4,
-          "sentence": "The tertiary structure involves the folding of these elements into a three-dimensional shape, forming distinct domains such as the amino-terminal domain (ATD), ligand-binding domain (LBD), and transmembrane domain (TMD) (Twomey2017Channel; D\u00fcrr2014Structure).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the citations are improperly formatted.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citations '(Twomey2017Channel; D\u00fcrr2014Structure)' do not adhere to standard citation formats.",
-              "reasoning": "Partial adherence due to incorrect citation formatting.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Review and correct citation formats for compliance."
+          "meta_notes": ""
         },
         {
           "index": 5,
-          "sentence": "In its quaternary structure, GluA2 forms a tetrameric assembly with other subunits, creating a 'Y'-shaped architecture.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence presents factual information without a citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No citation is provided for the structural information.",
-              "reasoning": "No adherence as factual statements are not supported by citations.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Include citations to support the description of the quaternary structure."
-        },
-        {
-          "index": 6,
           "sentence": "The ATDs form the top of the 'Y', the LBDs are located below, and the TMD forms the base, consisting of three membrane-spanning helices and a re-entrant pore loop (Twomey2017Channel).",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(Twomey2017Channel)' does not follow standard formats.",
-              "reasoning": "Partial adherence; citation is present but not correctly formatted.",
-              "overlap_notes": null
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Correct the citation format for compliance."
+          "meta_notes": ""
         },
         {
-          "index": 7,
+          "index": 6,
           "sentence": "Post-translational modifications such as phosphorylation and glycosylation affect the receptor's function and trafficking.",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence lacks an inline citation for factual information.",
-              "score": 0.0,
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
               "confidence": 1.0,
-              "evidence": "No citation is provided to support the statements.",
-              "reasoning": "No adherence due to absence of supporting citations.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Provide citations for the post-translational modifications mentioned."
+          "meta_notes": ""
         },
         {
-          "index": 8,
-          "sentence": "Splice variants of GluA2 can alter the receptor's properties and localization, impacting its physiological roles (D\u00fcrr2014Structure).",
+          "index": 7,
+          "sentence": "Splice variants of GluA2 can alter the receptor's properties and localization, impacting its physiological roles (Durr2014Structure).",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(D\u00fcrr2014Structure)' is not properly formatted.",
-              "reasoning": "Partial adherence; the citation exists but is not formatted according to standards.",
-              "overlap_notes": null
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Ensure proper citation formatting for consistency."
+          "meta_notes": ""
         }
       ],
       "requirement_evaluations": [],
-      "meta_notes": "Overall, the section provides detailed structural information but requires attention to citation formatting and the addition of missing citations."
+      "meta_notes": ""
     },
     {
       "index": 4,
       "title": "Function",
       "sentence_evaluations": [
         {
-          "index": 1,
+          "index": 0,
           "sentence": "The GRIA2 gene encodes the GluA2 subunit of AMPA receptors, which are critical for fast excitatory synaptic transmission in the central nervous system.",
           "requirement_evaluations": [
             {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviations and full names.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and the full gene name are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence uses gene abbreviations instead of full gene names.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "The sentence uses gene abbreviation 'GRIA2' instead of the full gene name.",
-              "reasoning": "Complete adherence to the best practice by using the gene abbreviation.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions a human gene name.",
-              "score": 1.0,
-              "confidence": 1.0,
-              "evidence": "The human gene name 'GRIA2' is written in capitals.",
-              "reasoning": "Complete adherence to the requirement by correctly capitalizing the human gene name.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence to the imperative standard as statements are not backed by specific sources.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Consider adding inline citations to support the factual statements and italicizing gene symbols for full adherence."
+          "meta_notes": ""
         },
         {
-          "index": 2,
+          "index": 1,
           "sentence": "GluA2 plays a pivotal role in determining the physiological properties of AMPA receptors, such as ion permeability and conductance.",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence as the sentence lacks a citation to support the information.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Add citations to support the factual statements."
-        },
-        {
-          "index": 3,
-          "sentence": "A key feature of GluA2 is its RNA editing, which converts a glutamine to an arginine in the pore-forming region, rendering GluA2-containing receptors less permeable to calcium ions (Ca2+).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence as the sentence lacks a citation to support the information.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Provide citations for the factual information presented."
-        },
-        {
-          "index": 4,
-          "sentence": "This modification is crucial for reducing the risk of excitotoxicity, a condition caused by excessive Ca2+ entry into neurons (Priya2014Nuclear; Isaac2007The).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "The citations '(Priya2014Nuclear; Isaac2007The)' do not follow standard citation formats.",
-              "reasoning": "Partial adherence due to incorrect citation formatting.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Ensure that citations are properly formatted according to standard guidelines."
-        },
-        {
-          "index": 5,
-          "sentence": "GluA2 is involved in synaptic plasticity, including processes like long-term potentiation (LTP) and long-term depression (LTD), which are essential for learning and memory.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence as the sentence lacks a citation to support the information.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Add citations to support the statements."
-        },
-        {
-          "index": 6,
-          "sentence": "The subunit's presence influences receptor kinetics and single-channel conductance, impacting synaptic transmission and plasticity (Priya2014Specificity; Isaac2007The).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citations '(Priya2014Specificity; Isaac2007The)' do not adhere to standard citation formats.",
-              "reasoning": "Partial adherence due to incorrect citation formatting.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Review and correct citation formats for compliance."
-        },
-        {
-          "index": 7,
-          "sentence": "In neurons, GluA2-containing AMPA receptors exhibit low Ca2+ permeability, while those lacking GluA2 are more permeable to Ca2+ and have higher conductance, affecting synaptic function and plasticity (Isaac2007The).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(Isaac2007The)' does not follow standard citation formats.",
-              "reasoning": "Partial adherence due to incorrect citation formatting.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Correct the citation format for compliance."
-        },
-        {
-          "index": 8,
-          "sentence": "The expression of GluA2 is regulated by transcription factors such as NRF-1 and Sp4, linking neuronal activity to energy metabolism and maintaining proper neuronal function (Priya2014Nuclear; Priya2014Specificity).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citations '(Priya2014Nuclear; Priya2014Specificity)' are not properly formatted.",
-              "reasoning": "Partial adherence; citations exist but are not formatted according to standards.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Ensure proper citation formatting for consistency."
-        },
-        {
-          "index": 1,
-          "sentence": "The GRIA2 gene encodes the GluA2 subunit of AMPA receptors, which are critical for fast excitatory synaptic transmission in the central nervous system.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviations and full names.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and the full gene name are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence uses gene abbreviations instead of full gene names.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "The sentence uses gene abbreviation 'GRIA2' instead of the full gene name.",
-              "reasoning": "Complete adherence to the best practice by using the gene abbreviation.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions a human gene name.",
-              "score": 1.0,
-              "confidence": 1.0,
-              "evidence": "The human gene name 'GRIA2' is written in capitals.",
-              "reasoning": "Complete adherence to the requirement by correctly capitalizing the human gene name.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence to the imperative standard as statements are not backed by specific sources.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Consider adding inline citations to support the factual statements and italicizing gene symbols for full adherence."
+          "meta_notes": ""
         },
         {
           "index": 2,
-          "sentence": "GluA2 plays a pivotal role in determining the physiological properties of AMPA receptors, such as ion permeability and conductance.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence as the sentence lacks a citation to support the information.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Add citations to support the factual statements."
-        },
-        {
-          "index": 3,
           "sentence": "A key feature of GluA2 is its RNA editing, which converts a glutamine to an arginine in the pore-forming region, rendering GluA2-containing receptors less permeable to calcium ions (Ca2+).",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence as the sentence lacks a citation to support the information.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Provide citations for the factual information presented."
-        },
-        {
-          "index": 4,
-          "sentence": "This modification is crucial for reducing the risk of excitotoxicity, a condition caused by excessive Ca2+ entry into neurons (Priya2014Nuclear; Isaac2007The).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "The citations '(Priya2014Nuclear; Isaac2007The)' do not follow standard citation formats.",
-              "reasoning": "Partial adherence due to incorrect citation formatting.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Ensure that citations are properly formatted according to standard guidelines."
-        },
-        {
-          "index": 5,
-          "sentence": "GluA2 is involved in synaptic plasticity, including processes like long-term potentiation (LTP) and long-term depression (LTD), which are essential for learning and memory.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence as the sentence lacks a citation to support the information.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Add citations to support the statements."
-        },
-        {
-          "index": 6,
-          "sentence": "The subunit's presence influences receptor kinetics and single-channel conductance, impacting synaptic transmission and plasticity (Priya2014Specificity; Isaac2007The).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citations '(Priya2014Specificity; Isaac2007The)' do not adhere to standard citation formats.",
-              "reasoning": "Partial adherence due to incorrect citation formatting.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Review and correct citation formats for compliance."
-        },
-        {
-          "index": 7,
-          "sentence": "In neurons, GluA2-containing AMPA receptors exhibit low Ca2+ permeability, while those lacking GluA2 are more permeable to Ca2+ and have higher conductance, affecting synaptic function and plasticity (Isaac2007The).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(Isaac2007The)' does not follow standard citation formats.",
-              "reasoning": "Partial adherence due to incorrect citation formatting.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Correct the citation format for compliance."
-        },
-        {
-          "index": 8,
-          "sentence": "The expression of GluA2 is regulated by transcription factors such as NRF-1 and Sp4, linking neuronal activity to energy metabolism and maintaining proper neuronal function (Priya2014Nuclear; Priya2014Specificity).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citations '(Priya2014Nuclear; Priya2014Specificity)' are not properly formatted.",
-              "reasoning": "Partial adherence; citations exist but are not formatted according to standards.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Ensure proper citation formatting for consistency."
-        },
-        {
-          "index": 1,
-          "sentence": "The GRIA2 gene encodes the GluA2 subunit of AMPA receptors, which are critical for fast excitatory synaptic transmission in the central nervous system.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviations and full names.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and the full gene name are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence uses gene abbreviations instead of full gene names.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "The sentence uses gene abbreviation 'GRIA2' instead of the full gene name.",
-              "reasoning": "Complete adherence to the best practice by using the gene abbreviation.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions a human gene name.",
-              "score": 1.0,
-              "confidence": 1.0,
-              "evidence": "The human gene name 'GRIA2' is written in capitals.",
-              "reasoning": "Complete adherence to the requirement by correctly capitalizing the human gene name.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence to the imperative standard as statements are not backed by specific sources.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Consider adding inline citations to support the factual statements and italicizing gene symbols for full adherence."
-        },
-        {
-          "index": 1,
-          "sentence": "The GRIA2 gene encodes the GluA2 subunit of AMPA receptors, which are critical for fast excitatory synaptic transmission in the central nervous system.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviations and full names.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and the full gene name are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence uses gene abbreviations instead of full gene names.",
-              "score": 1.0,
-              "confidence": 1.0,
-              "evidence": "The sentence uses gene abbreviation 'GRIA2' instead of the full gene name.",
-              "reasoning": "Complete adherence to the best practice by using the gene abbreviation.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions a human gene name.",
-              "score": 1.0,
-              "confidence": 1.0,
-              "evidence": "The human gene name 'GRIA2' is written in capitals.",
-              "reasoning": "Complete adherence to the requirement by correctly capitalizing the human gene name.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence to the imperative standard as statements are not backed by specific sources.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Consider adding inline citations to support the factual statements and italicizing gene symbols for full adherence."
-        },
-        {
-          "index": 2,
-          "sentence": "GluA2 plays a pivotal role in determining the physiological properties of AMPA receptors, such as ion permeability and conductance.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence as the sentence lacks a citation to support the information.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Add citations to support the factual statements."
+          "meta_notes": ""
         },
         {
           "index": 3,
-          "sentence": "A key feature of GluA2 is its RNA editing, which converts a glutamine to an arginine in the pore-forming region, rendering GluA2-containing receptors less permeable to calcium ions (Ca2+).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence as the sentence lacks a citation to support the information.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Provide citations for the factual information presented."
-        },
-        {
-          "index": 4,
           "sentence": "This modification is crucial for reducing the risk of excitotoxicity, a condition caused by excessive Ca2+ entry into neurons (Priya2014Nuclear; Isaac2007The).",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "The citations '(Priya2014Nuclear; Isaac2007The)' do not follow standard citation formats.",
-              "reasoning": "Partial adherence due to incorrect citation formatting.",
-              "overlap_notes": null
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Ensure that citations are properly formatted according to standard guidelines."
+          "meta_notes": ""
         },
         {
-          "index": 5,
+          "index": 4,
           "sentence": "GluA2 is involved in synaptic plasticity, including processes like long-term potentiation (LTP) and long-term depression (LTD), which are essential for learning and memory.",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
               "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence as the sentence lacks a citation to support the information.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Add citations to support the statements."
+          "meta_notes": ""
         },
         {
-          "index": 6,
+          "index": 5,
           "sentence": "The subunit's presence influences receptor kinetics and single-channel conductance, impacting synaptic transmission and plasticity (Priya2014Specificity; Isaac2007The).",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citations '(Priya2014Specificity; Isaac2007The)' do not adhere to standard citation formats.",
-              "reasoning": "Partial adherence due to incorrect citation formatting.",
-              "overlap_notes": null
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Review and correct citation formats for compliance."
+          "meta_notes": ""
         },
         {
-          "index": 7,
+          "index": 6,
           "sentence": "In neurons, GluA2-containing AMPA receptors exhibit low Ca2+ permeability, while those lacking GluA2 are more permeable to Ca2+ and have higher conductance, affecting synaptic function and plasticity (Isaac2007The).",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(Isaac2007The)' does not follow standard citation formats.",
-              "reasoning": "Partial adherence due to incorrect citation formatting.",
-              "overlap_notes": null
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Correct the citation format for compliance."
+          "meta_notes": ""
         },
         {
-          "index": 8,
+          "index": 7,
           "sentence": "The expression of GluA2 is regulated by transcription factors such as NRF-1 and Sp4, linking neuronal activity to energy metabolism and maintaining proper neuronal function (Priya2014Nuclear; Priya2014Specificity).",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citations '(Priya2014Nuclear; Priya2014Specificity)' are not properly formatted.",
-              "reasoning": "Partial adherence; citations exist but are not formatted according to standards.",
-              "overlap_notes": null
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Ensure proper citation formatting for consistency."
+          "meta_notes": ""
         }
       ],
       "requirement_evaluations": [
         {
-          "requirement_id": "30",
+          "requirement_id": "R30",
           "requirement_category": "Content",
           "classification": "Imperative Standards",
           "applicable": true,
-          "applicability_reasoning": "Applicable because the section describes the function of the transcribed protein.",
+          "applicability_reasoning": "Section includes description of protein function.",
+          "reasoning": "Function of the transcribed protein is described.",
           "score": 1.0,
           "confidence": 0.95,
-          "evidence": "The section explains the role of GluA2 in synaptic transmission, its influence on receptor properties, RNA editing, and involvement in synaptic plasticity.",
-          "reasoning": "Fully meets the requirement by providing comprehensive details on the protein's function.",
-          "overlap_notes": null
+          "evidence": "Description of GluA2 function.",
+          "reasoning_detail": "Fully meets the requirement."
         }
       ],
-      "meta_notes": "The section provides detailed functional information but citations need to be properly formatted and additional citations added where missing."
+      "meta_notes": "The function is thoroughly described, meeting the requirement."
     },
     {
       "index": 5,
       "title": "Clinical Significance",
       "sentence_evaluations": [
         {
-          "index": 1,
+          "index": 0,
           "sentence": "Mutations and alterations in the GRIA2 gene, which encodes the GluA2 subunit of AMPA receptors, are associated with a range of neurodevelopmental disorders.",
           "requirement_evaluations": [
             {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions gene names and abbreviations.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and 'GluA2' are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence uses gene abbreviations instead of full names.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "The sentence uses the gene abbreviation 'GRIA2' instead of the full gene name.",
-              "reasoning": "Complete adherence to the best practice by using the gene abbreviation.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions a human gene name.",
-              "score": 1.0,
-              "confidence": 1.0,
-              "evidence": "The gene name 'GRIA2' is correctly capitalized.",
-              "reasoning": "Complete adherence by correctly capitalizing the human gene name.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence contains significant factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the factual statements.",
-              "reasoning": "No adherence as statements are not backed by specific sources.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Consider adding inline citations and italicizing gene symbols 'GRIA2' and 'GluA2' for full adherence."
+          "meta_notes": ""
         },
         {
-          "index": 2,
+          "index": 1,
           "sentence": "These include intellectual disability, autism spectrum disorder, Rett syndrome-like features, and developmental and epileptic encephalopathy (Salpietro2019AMPA).",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "The citation '(Salpietro2019AMPA)' does not follow standard citation formats.",
-              "reasoning": "Partial adherence; the presence of a citation shows partial compliance, but incorrect formatting affects the score.",
-              "overlap_notes": null
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Ensure that citations are properly formatted according to standard guidelines."
+          "meta_notes": ""
         },
         {
-          "index": 3,
+          "index": 2,
           "sentence": "Specific mutations, such as p.Q607E and p.A639S, have been linked to severe clinical phenotypes, including epileptic encephalopathy and sudden unexplained death in epilepsy (SUDEP) (Salpietro2019AMPA).",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "The citation '(Salpietro2019AMPA)' does not follow standard citation formats.",
-              "reasoning": "Partial adherence; citation is present but not correctly formatted.",
-              "overlap_notes": null
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Correct the citation format for compliance."
+          "meta_notes": ""
         },
         {
-          "index": 4,
+          "index": 3,
           "sentence": "The GRIA2 gene is highly constrained for missense variations and intolerant to loss of function, indicating its critical role in protein stability and function (Cai2022Novel).",
           "requirement_evaluations": [
             {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions gene names.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' is not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "The sentence uses 'GRIA2' instead of the full gene name.",
-              "reasoning": "Complete adherence to best practice.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable as the sentence mentions a human gene name.",
-              "score": 1.0,
-              "confidence": 1.0,
-              "evidence": "'GRIA2' is correctly capitalized.",
-              "reasoning": "Complete adherence to imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(Cai2022Novel)' does not follow standard citation formats.",
-              "reasoning": "Partial adherence due to incorrect citation formatting.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Consider italicizing gene symbols and correcting citation formats."
+          "meta_notes": ""
         },
         {
-          "index": 5,
+          "index": 4,
           "sentence": "De novo variants in GRIA2 can lead to haploinsufficiency, contributing to the phenotypic spectrum of neurodevelopmental disorders, which often manifest in childhood with symptoms such as developmental delay, speech impairment, and seizures (Salpietro2019AMPA).",
           "requirement_evaluations": [
             {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable as the sentence mentions gene abbreviations.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "'GRIA2' is not italicized.",
-              "reasoning": "Minimal adherence with significant gaps.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable as gene abbreviation is used.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "Uses 'GRIA2' instead of full gene name.",
-              "reasoning": "Complete adherence.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable as human gene name is mentioned.",
-              "score": 1.0,
-              "confidence": 1.0,
-              "evidence": "'GRIA2' is correctly capitalized.",
-              "reasoning": "Complete adherence.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(Salpietro2019AMPA)' does not follow standard formats.",
-              "reasoning": "Partial adherence.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Italicize gene symbols and correct citation formats."
+          "meta_notes": ""
         },
         {
-          "index": 6,
+          "index": 5,
           "sentence": "Alterations in GRIA2 expression have also been implicated in amyotrophic lateral sclerosis (ALS), particularly in the context of FUS mutations, which are known to downregulate GRIA2 expression in motor neurons (Capauto2018A).",
           "requirement_evaluations": [
             {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable as gene abbreviations are mentioned.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "'GRIA2' and 'FUS' are not italicized.",
-              "reasoning": "Minimal adherence.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable as human gene names are mentioned.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "'GRIA2' and 'FUS' are correctly capitalized.",
-              "reasoning": "Complete adherence.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(Capauto2018A)' is not correctly formatted.",
-              "reasoning": "Partial adherence.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Italicize gene symbols and correct citation formats."
+          "meta_notes": ""
         },
         {
-          "index": 7,
+          "index": 6,
           "sentence": "These findings underscore the gene's involvement in both neurodevelopmental and neurodegenerative conditions.",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable since the sentence summarizes factual statements without a citation.",
-              "score": 0.0,
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
               "confidence": 1.0,
-              "evidence": "No citation is provided for the statements made.",
-              "reasoning": "No adherence as statements are not backed by specific sources.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Add citations to support the summarizing statements."
-        },
-        {
-          "index": 1,
-          "sentence": "Mutations and alterations in the GRIA2 gene, which encodes the GluA2 subunit of AMPA receptors, are associated with a range of neurodevelopmental disorders.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions gene names and abbreviations.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and 'GluA2' are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Consider adding inline citations and italicizing gene symbols 'GRIA2' and 'GluA2' for full adherence."
-        },
-        {
-          "index": 1,
-          "sentence": "Mutations and alterations in the GRIA2 gene, which encodes the GluA2 subunit of AMPA receptors, are associated with a range of neurodevelopmental disorders.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions gene names and abbreviations.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' and 'GluA2' are not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Consider adding inline citations and italicizing gene symbols 'GRIA2' and 'GluA2' for full adherence."
+          "meta_notes": ""
         }
       ],
       "requirement_evaluations": [
         {
-          "requirement_id": "32",
+          "requirement_id": "R32",
           "requirement_category": "Content",
           "classification": "Imperative Standards",
           "applicable": true,
-          "applicability_reasoning": "Applicable because the section lists diseases and conditions related to mutations in the GRIA2 gene.",
+          "applicability_reasoning": "Section lists diseases related to gene/protein mutations.",
+          "reasoning": "Mutations linked to disorders are mentioned.",
           "score": 1.0,
           "confidence": 0.95,
-          "evidence": "The section describes associations between GRIA2 mutations and various neurodevelopmental disorders and neurodegenerative conditions.",
-          "reasoning": "Fully meets the requirement by providing comprehensive details on related diseases and conditions.",
-          "overlap_notes": null
+          "evidence": "Mutations in GRIA2 linked to disorders.",
+          "reasoning_detail": "Fully meets the requirement."
         }
       ],
-      "meta_notes": "The section provides detailed clinical significance but needs proper citation formatting and additional citations where missing."
+      "meta_notes": "The section adequately lists diseases related to gene/protein mutations."
     },
     {
       "index": 6,
       "title": "Interactions",
       "sentence_evaluations": [
         {
-          "index": 1,
+          "index": 0,
           "sentence": "GRIA2, a subunit of AMPA-type glutamate receptors, is involved in various protein interactions that modulate synaptic transmission and plasticity.",
           "requirement_evaluations": [
             {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviation.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' is not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence uses the gene abbreviation instead of the full gene name.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "Uses gene abbreviation 'GRIA2' instead of full gene name.",
-              "reasoning": "Complete adherence to the best practice.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because it mentions a human gene name.",
-              "score": 1.0,
-              "confidence": 1.0,
-              "evidence": "'GRIA2' is correctly capitalized.",
-              "reasoning": "Complete adherence to the imperative standard.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable since the sentence provides factual information without an inline citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No inline citation is provided for the statements made.",
-              "reasoning": "No adherence as the statement is not backed by a specific source.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Consider adding inline citations to support factual statements and italicizing gene symbols for full adherence."
+          "meta_notes": ""
         },
         {
-          "index": 2,
+          "index": 1,
           "sentence": "It forms part of the AMPA receptor complexes, which include auxiliary subunits such as TARPs (transmembrane AMPA receptor regulatory proteins) and CNIHs (cornichon homologs).",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable since the sentence provides factual information without an inline citation.",
-              "score": 0.0,
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
               "confidence": 1.0,
-              "evidence": "No inline citation provided for the statements made.",
-              "reasoning": "No adherence as the statements are not backed by specific sources.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Add citations to support the factual statements presented."
+          "meta_notes": ""
         },
         {
-          "index": 3,
+          "index": 2,
           "sentence": "These auxiliary proteins are crucial for the trafficking, gating, and pharmacology of AMPA receptors.",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable since the sentence provides factual information without an inline citation.",
-              "score": 0.0,
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
               "confidence": 1.0,
-              "evidence": "No inline citation provided for the statements made.",
-              "reasoning": "No adherence as the statements are not backed by specific sources.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Add citations to support the factual statements presented."
+          "meta_notes": ""
+        },
+        {
+          "index": 3,
+          "sentence": "TARPs, particularly TARPÎ²2, TARPÎ²3, and TARPÎ²8, are major auxiliary proteins that interact with GRIA2, influencing receptor function across different brain regions (Chen2014Interaction).",
+          "requirement_evaluations": [
+            {
+              "requirement_id": "R3",
+              "requirement_category": "Content",
+              "classification": "Imperative Standards",
+              "applicable": true,
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
+              "confidence": 1.0,
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
+            }
+          ],
+          "meta_notes": ""
         },
         {
           "index": 4,
-          "sentence": "TARPs, particularly TARP\u03b22, TARP\u03b23, and TARP\u03b28, are major auxiliary proteins that interact with GRIA2, influencing receptor function across different brain regions (Chen2014Interaction).",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviations.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' is not italicized.",
-              "reasoning": "Minimal adherence as gene names are not italicized.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "6",
-              "requirement_category": "Naming",
-              "classification": "Best Practices",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence uses gene abbreviations.",
-              "score": 1.0,
-              "confidence": 1.0,
-              "evidence": "Uses 'GRIA2' instead of full gene name.",
-              "reasoning": "Complete adherence.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because 'GRIA2' is a human gene name.",
-              "score": 1.0,
-              "confidence": 1.0,
-              "evidence": "'GRIA2' is correctly capitalized.",
-              "reasoning": "Complete adherence.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(Chen2014Interaction)' does not follow standard citation formats.",
-              "reasoning": "Partial adherence; citation is present but incorrectly formatted.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Italicize gene symbols and correct citation formatting for full adherence."
-        },
-        {
-          "index": 5,
           "sentence": "GRIA2 also interacts with the auxiliary subunit GSG1-l, which shows a preferred association with GluA2-containing AMPARs, indicating a specific interaction that contributes to the receptor's stability and function (Schwenk2012HighResolution).",
           "requirement_evaluations": [
             {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence mentions gene symbols 'GRIA2' and 'GluA2'.",
-              "score": 0.25,
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
               "confidence": 1.0,
-              "evidence": "Gene symbols 'GRIA2' and 'GluA2' are not italicized.",
-              "reasoning": "Minimal adherence as gene names are not italicized.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(Schwenk2012HighResolution)' is not properly formatted.",
-              "reasoning": "Partial adherence; citation exists but is incorrectly formatted.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Italicize gene symbols and correct citation formatting."
+          "meta_notes": ""
         },
         {
-          "index": 6,
+          "index": 5,
           "sentence": "The study of AMPA receptor complexes has revealed that GRIA2 is part of a common 'inner core' of AMPARs, which includes four GluA subunits and four major auxiliary subunits, with additional 'outer core' constituents binding directly to GluA proteins (Schwenk2012HighResolution).",
           "requirement_evaluations": [
             {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because gene symbols 'GRIA2' and 'GluA' are mentioned.",
-              "score": 0.25,
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
               "confidence": 1.0,
-              "evidence": "Gene symbols are not italicized.",
-              "reasoning": "Minimal adherence due to lack of italicization.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(Schwenk2012HighResolution)' is improperly formatted.",
-              "reasoning": "Partial adherence; citation is present but not correctly formatted.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Italicize gene symbols and correct citation formatting."
+          "meta_notes": ""
         },
         {
-          "index": 7,
+          "index": 6,
           "sentence": "In the context of excitotoxic stress, GRIA2 mRNA interacts with the RNA-binding protein FUS, which is essential for its processing and subcellular localization, particularly in neuronal dendrites.",
           "requirement_evaluations": [
             {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable because 'GRIA2' and 'FUS' are gene symbols.",
-              "score": 0.25,
-              "confidence": 1.0,
-              "evidence": "Gene symbols are not italicized.",
-              "reasoning": "Minimal adherence due to lack of italicization.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "7",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable as human gene names are mentioned.",
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
               "score": 1.0,
               "confidence": 1.0,
-              "evidence": "'GRIA2' and 'FUS' are correctly capitalized.",
-              "reasoning": "Complete adherence.",
-              "overlap_notes": null
-            },
-            {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because factual statements lack citation.",
-              "score": 0.0,
-              "confidence": 1.0,
-              "evidence": "No citation provided.",
-              "reasoning": "No adherence due to missing citation.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Italicize gene symbols and add citations."
+          "meta_notes": ""
         },
         {
-          "index": 8,
+          "index": 7,
           "sentence": "This interaction is crucial for the splicing and transport of GRIA2 mRNA, highlighting its role in maintaining receptor function under stress conditions (Tischbein2019The).",
           "requirement_evaluations": [
             {
-              "requirement_id": "36",
-              "requirement_category": "Citations",
+              "requirement_id": "R3",
+              "requirement_category": "Content",
               "classification": "Imperative Standards",
               "applicable": true,
-              "applicability_reasoning": "Applicable due to improper citation formatting.",
-              "score": 0.5,
-              "confidence": 0.9,
-              "evidence": "Citation '(Tischbein2019The)' is improperly formatted.",
-              "reasoning": "Partial adherence; citation exists but formatting is incorrect.",
-              "overlap_notes": null
-            }
-          ],
-          "meta_notes": "Correct citation formatting."
-        },
-        {
-          "index": 1,
-          "sentence": "GRIA2, a subunit of AMPA-type glutamate receptors, is involved in various protein interactions that modulate synaptic transmission and plasticity.",
-          "requirement_evaluations": [
-            {
-              "requirement_id": "5",
-              "requirement_category": "Language Usage",
-              "classification": "Imperative Standards",
-              "applicable": true,
-              "applicability_reasoning": "Applicable because the sentence includes gene abbreviation.",
-              "score": 0.25,
+              "applicability_reasoning": "Applies to article prose to avoid listing authors' qualifications.",
+              "reasoning": "No authors' qualifications listed; properly focuses on findings.",
+              "score": 1.0,
               "confidence": 1.0,
-              "evidence": "The gene abbreviation 'GRIA2' is not italicized.",
-              "reasoning": "Minimal adherence with significant gaps, as gene names are not italicized, violating an imperative standard.",
-              "overlap_notes": null
+              "evidence": "No listing of authors' qualifications.",
+              "reasoning_detail": "Fully meets the requirement."
             }
           ],
-          "meta_notes": "Consider adding inline citations to support factual statements and italicizing gene symbols for full adherence."
+          "meta_notes": ""
         }
       ],
-      "requirement_evaluations": [
-        {
-          "requirement_id": "31",
-          "requirement_category": "Content",
-          "classification": "Flexible Guidelines",
-          "applicable": true,
-          "applicability_reasoning": "Applicable because the section lists proteins that GRIA2 interacts with.",
-          "score": 1.0,
-          "confidence": 0.95,
-          "evidence": "The section provides detailed interactions of GRIA2 with various proteins such as TARPs, CNIHs, GSG1-l, and FUS.",
-          "reasoning": "Fully meets the requirement by comprehensively listing known protein interactions.",
-          "overlap_notes": null
-        }
-      ],
-      "meta_notes": "The section provides detailed interaction information but requires proper citation formatting and italicization of gene symbols."
-    },
-    {
-      "index": 7,
-      "title": "References",
-      "sentence_evaluations": [],
-      "requirement_evaluations": [
-        {
-          "requirement_id": "38",
-          "requirement_category": "Citations",
-          "classification": "Imperative Standards",
-          "applicable": true,
-          "applicability_reasoning": "Applicable because the reference list contains entries with more than six authors, and should follow URM citation guidelines.",
-          "score": 0.25,
-          "confidence": 0.9,
-          "evidence": "Reference 3 lists 11 authors without using 'et al.' as per URM guidelines.",
-          "reasoning": "Minimal adherence with significant gaps, as the references with more than six authors do not use 'et al.', violating an imperative standard.",
-          "overlap_notes": null
-        },
-        {
-          "requirement_id": "37",
-          "requirement_category": "Citations",
-          "classification": "Imperative Standards",
-          "applicable": true,
-          "applicability_reasoning": "Applicable because citation format should be consistent within the article, including in the References section.",
-          "score": 0.5,
-          "confidence": 0.9,
-          "evidence": "Inconsistencies observed in the formatting of references; some include extra information like 'This article has X citations', others do not.",
-          "reasoning": "Partial adherence; citation formatting is inconsistent within the References section, which is important for imperative standards.",
-          "overlap_notes": null
-        }
-      ],
-      "meta_notes": "Ensure that all references adhere to URM citation guidelines by listing up to six authors followed by 'et al.' if there are more than six authors. Also, standardize the citation format for consistency within the References section."
+      "requirement_evaluations": [],
+      "meta_notes": ""
     }
   ],
   "article_evaluation": {
     "requirement_evaluations": [
       {
-        "requirement_id": "37",
-        "requirement_category": "Citations",
+        "requirement_id": "R1",
+        "requirement_category": "Content",
         "classification": "Imperative Standards",
         "applicable": true,
-        "applicability_reasoning": "Applicable because the article includes citations, and their format should be consistent.",
+        "applicability_reasoning": "Article covers human gene/protein but lacks information on orthologs in other species.",
+        "reasoning": "Orthologs in other species not mentioned throughout the article.",
         "score": 0.5,
         "confidence": 0.9,
-        "evidence": "The in-line citations are formatted differently from standard practices, such as '(Priya2014Nuclear; Isaac2007The)'.",
-        "reasoning": "Partial adherence; citation formatting is inconsistent and does not follow standard guidelines, which is important for imperative standards.",
-        "overlap_notes": null
+        "evidence": "No mention of orthologs in other species.",
+        "reasoning_detail": "Partial adherence; human gene/protein included, orthologs missing."
+      },
+      {
+        "requirement_id": "R34",
+        "requirement_category": "Structure",
+        "classification": "Imperative Standards",
+        "applicable": true,
+        "applicability_reasoning": "Article does not link to Wikidata item of the entity in the lead sentence.",
+        "reasoning": "No mention of Wikidata linkage.",
+        "score": 0.0,
+        "confidence": 1.0,
+        "evidence": "No link to Wikidata in content.",
+        "reasoning_detail": "Does not meet the requirement."
       }
     ],
-    "meta_notes": null
+    "meta_notes": "Overall, the article meets most Imperative Standards but is missing information on orthologs and lacks a link to a Wikidata item. Consider adding information on orthologs and linking to the appropriate Wikidata item to fully comply with the guidelines."
   }
 }

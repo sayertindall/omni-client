@@ -65,12 +65,17 @@ export interface Requirement {
   classification: string;
   where: string;
   when: string;
+  level?: string;
 }
 
 export interface RequirementsData {
-  groups: {
-    [key: string]: Requirement[];
-  };
+  groups: RequirementGroup[];
+}
+
+export interface RequirementGroup {
+  description: string;
+  category: string;
+  requirements: Requirement[];
 }
 
 /* -------------------------------------
@@ -384,8 +389,8 @@ export function mergeRequirementWithEvaluation(
   let requirement: Requirement | undefined;
 
   // Search through all groups for the matching requirement
-  Object.values(requirementsData.groups).forEach((requirements) => {
-    const found = requirements.find((r) => r.id === evaluation.requirement_id);
+  requirementsData.groups.forEach((group) => {
+    const found = group.requirements.find((r) => r.id === evaluation.requirement_id);
     if (found) {
       requirement = found;
     }
@@ -446,160 +451,33 @@ export function getEnhancedRequirementsForArticle(
   );
 }
 
-/* -------------------------------------
- * 5. Example Usage of the Utility Functions
- * ------------------------------------- */
+/**
+ * Type guard to ensure requirement evaluation has non-null score
+ */
+export function isValidRequirementEvaluation(
+  evaluation: import("./cache").RequirementEvaluation
+): evaluation is RequirementEvaluation {
+  return evaluation.score !== null && evaluation.confidence !== null;
+}
 
-// Assume `evaluationData` is your JSON data parsed into the `EvaluationData` export interface
-// For demonstration, let's create a minimal example (replace with your actual data):
-
-// const evaluationData: EvaluationData = {
-//   sections: [
-//     {
-//       index: 1,
-//       title: "Overview",
-//       sentence_evaluations: [
-//         {
-//           index: 1,
-//           sentence: "Sentence 1.",
-//           requirement_evaluations: [
-//             {
-//               requirement_id: "R1",
-//               requirement_category: "Content",
-//               classification: "Imperative Standards",
-//               applicable: true,
-//               applicability_reasoning:
-//                 "Applicable because this is just a demo requirement evaluation.",
-//               score: 0.5,
-//               confidence: 0.8,
-//               evidence: "Sample evidence.",
-//               reasoning: "Sample reasoning.",
-//             },
-//           ],
-//         },
-//       ],
-//       requirement_evaluations: [
-//         {
-//           requirement_id: "R25",
-//           requirement_category: "Structure",
-//           classification: "Imperative Standards",
-//           applicable: true,
-//           applicability_reasoning: "Sample applicability reasoning.",
-//           score: 1.0,
-//           confidence: 0.95,
-//           evidence: "Section-level evidence.",
-//           reasoning: "Section-level reasoning.",
-//         },
-//       ],
-//     },
-//   ],
-//   article_evaluation: {
-//     requirement_evaluations: [
-//       {
-//         requirement_id: "R35",
-//         requirement_category: "Citations",
-//         classification: "Best Practices",
-//         applicable: true,
-//         applicability_reasoning:
-//           "Sample applicability reasoning for the article.",
-//         score: 0,
-//         confidence: 0.95,
-//         evidence: "No inline citations found.",
-//         reasoning: "Article-level reasoning.",
-//       },
-//     ],
-//   },
-// };
-
-// // Usage Examples:
-
-// // 1. Get the aggregate score for a specific section by index
-// const sectionIndex = 1;
-// const sectionScore = getSectionAggregateScore(evaluationData, sectionIndex);
-// console.log(`Section ${sectionIndex} aggregate score: ${sectionScore}`);
-
-// // 2. Get the aggregate score for a specific sentence by section and sentence indexes
-// const sentenceIndex = 1;
-// const sentenceScore = getSentenceAggregateScore(
-//   evaluationData,
-//   sectionIndex,
-//   sentenceIndex
-// );
-// console.log(
-//   `Sentence ${sentenceIndex} in Section ${sectionIndex} aggregate score: ${sentenceScore}`
-// );
-
-// // 3. Retrieve a specific requirement evaluation from a sentence
-// const requirementId = "R1";
-// const specificRequirementEvaluation = getRequirementEvaluationForSentence(
-//   evaluationData,
-//   sectionIndex,
-//   sentenceIndex,
-//   requirementId
-// );
-// console.log(
-//   `Specific requirement evaluation for requirement ${requirementId}:`,
-//   specificRequirementEvaluation
-// );
-
-// // 4. Get overall article score
-// const overallScore = getOverallArticleScore(evaluationData);
-// console.log(`Overall article score: ${overallScore}`);
-
-// // 5. Retrieve all evaluations of a specific requirement across a section
-// const sectionRequirementEvaluations = getRequirementEvaluationsForSection(
-//   evaluationData,
-//   sectionIndex,
-//   requirementId
-// );
-// console.log(
-//   `All ${requirementId} requirement evaluations in Section ${sectionIndex}:`,
-//   sectionRequirementEvaluations
-// );
-
-// // 6. Compute the average score for a specific requirement across all sentences in a section
-// const averageScoreForRequirementInSection =
-//   getAverageScoreForRequirementInSection(
-//     evaluationData,
-//     sectionIndex,
-//     requirementId
-//   );
-// console.log(
-//   `Average score for requirement ${requirementId} in Section ${sectionIndex}: ${averageScoreForRequirementInSection}`
-// );
-
-// // 7. Compute the average score for a specific requirement across the entire article
-// const averageScoreForRequirementInArticle =
-//   getAverageScoreForRequirementInArticle(evaluationData, requirementId);
-// console.log(
-//   `Average score for requirement ${requirementId} across the article: ${averageScoreForRequirementInArticle}`
-// );
-
-// // 8. Retrieve all requirements evaluated for a specific sentence
-// const allRequirementsForSentence = getAllRequirementsForSentence(
-//   evaluationData,
-//   sectionIndex,
-//   sentenceIndex
-// );
-// console.log(
-//   `All requirements evaluated for Sentence ${sentenceIndex} in Section ${sectionIndex}:`,
-//   allRequirementsForSentence
-// );
-
-// // 9. Retrieve all requirements evaluated for a specific section
-// const allRequirementsForSectionData = getAllRequirementsForSection(
-//   evaluationData,
-//   sectionIndex
-// );
-// console.log(
-//   `All requirements evaluated for Section ${sectionIndex}:`,
-//   allRequirementsForSectionData
-// );
-
-// // 10. Retrieve all requirements evaluated for the entire article
-// const allRequirementsForArticleData =
-//   getAllRequirementsForArticle(evaluationData);
-// console.log(
-//   `All requirements evaluated for the entire article:`,
-//   allRequirementsForArticleData
-// );
+/**
+ * Converts cache evaluation data to eval evaluation data by filtering out invalid evaluations
+ */
+export function convertCacheToEvalData(
+  cacheData: import("./cache").Evaluation
+): EvaluationData {
+  return {
+    sections: cacheData.sections.map((section) => ({
+      ...section,
+      sentence_evaluations: section.sentence_evaluations.map((sentence) => ({
+        ...sentence,
+        requirement_evaluations: sentence.requirement_evaluations.filter(isValidRequirementEvaluation)
+      })),
+      requirement_evaluations: section.requirement_evaluations.filter(isValidRequirementEvaluation)
+    })),
+    article_evaluation: {
+      ...cacheData.article_evaluation,
+      requirement_evaluations: cacheData.article_evaluation.requirement_evaluations.filter(isValidRequirementEvaluation)
+    }
+  };
+}

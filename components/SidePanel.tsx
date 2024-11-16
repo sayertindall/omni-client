@@ -1,3 +1,9 @@
+/**
+ * @title SidePanel
+ * @fileoverview Component that displays the side panel with evaluation data
+ * @path /components/SidePanel.tsx
+ */
+
 import React, { useMemo } from "react";
 import { XCircle } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";

@@ -1,4 +1,9 @@
-// components/HighlightToggle.tsx
+/**
+ * @title HighlightToggle
+ * @fileoverview Component that toggles the highlight mode
+ * @path /components/HighlightToggle.tsx
+ */
+
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 
