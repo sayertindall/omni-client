@@ -10,6 +10,7 @@ import { ModeToggle } from "./ModeToggle";
 import { Button } from "./ui/button";
 import { BookOpen, GithubIcon } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 // Add this interface at the top of your Header component file
 interface HeaderProps {
@@ -17,14 +18,19 @@ interface HeaderProps {
   showRequirements: boolean;
   onBackToArticle: () => void;
   setSidePanelOpen: (open: boolean) => void;
+  onHomeClick: () => void;
 }
 
 export function Header({ 
   onShowRequirements, 
   showRequirements, 
   onBackToArticle,
-  setSidePanelOpen 
+  setSidePanelOpen,
+  onHomeClick
 }: HeaderProps) {
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
+
   const handleRequirementsClick = () => {
     onShowRequirements();
     setSidePanelOpen(false);
@@ -34,7 +40,11 @@ export function Header({
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-14 items-center justify-between px-4">
         {/* Logo Section with Link */}
-        <Link href="/" className="flex items-center space-x-2 hover:opacity-80">
+        <Link 
+          href="/" 
+          className="flex items-center space-x-2 hover:opacity-80"
+          onClick={onHomeClick}
+        >
           <BookOpen className="h-6 w-6 text-primary" aria-hidden="true" />
           <span className="text-lg font-bold text-primary">Omnipedia</span>
         </Link>
@@ -42,7 +52,13 @@ export function Header({
         {/* Navigation and Actions */}
         <div className="flex items-center space-x-4">
           <nav className="flex items-center space-x-4">
-            {showRequirements ? (
+            {!isHomePage ? (
+              <Link href="/">
+                <Button variant="ghost">
+                  Back to Article
+                </Button>
+              </Link>
+            ) : showRequirements ? (
               <Button variant="ghost" onClick={onBackToArticle}>
                 Back to Article
               </Button>

@@ -4,7 +4,7 @@
  * @path app/layout.tsx
  */
 
-import { AppProvider } from "./providers";
+import { AppProvider } from "./context/AppContext";
 import { HeaderWrapper } from "@/components/HeaderWrapper";
 import type { Metadata } from "next";
 import "./globals.css";

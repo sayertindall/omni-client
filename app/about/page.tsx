@@ -1,7 +1,11 @@
+/**
+ * @title About Page 
+ * @fileoverview About page component
+ * @path /app/about/page.tsx
+ */
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { BookOpen, Code, FileSearch, GitBranch, LineChart } from "lucide-react";
+import { BookOpen, FileSearch } from "lucide-react";
 import { NextPage } from 'next';
 
 const About: NextPage = () => {

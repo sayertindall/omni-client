@@ -1,7 +1,4 @@
-# Omnipedia
-
-## Overview
-Omnipedia is a sophisticated document analysis and compliance evaluation tool that helps researchers and compliance professionals analyze text against predefined requirements and standards.
+📚 Omnipedia is a sophisticated document analysis and compliance evaluation tool that helps researchers 🔍 and compliance professionals analyze text against predefined requirements and standards ✅.
 
 ## Key Features
 

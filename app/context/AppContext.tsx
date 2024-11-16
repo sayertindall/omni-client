@@ -1,9 +1,3 @@
-/**
- * @title App Providers
- * @fileoverview Context providers for the application
- * @path /app/providers.tsx
- */
-
 "use client";
 
 import React, { createContext, useContext, useState } from 'react';
@@ -11,6 +5,7 @@ import React, { createContext, useContext, useState } from 'react';
 interface AppContextType {
   showRequirements: boolean;
   setShowRequirements: (show: boolean) => void;
+  isSidePanelOpen: boolean;
   setSidePanelOpen: (open: boolean) => void;
 }
 
@@ -40,4 +35,4 @@ export function useApp() {
     throw new Error('useApp must be used within an AppProvider');
   }
   return context;
-} 
+}

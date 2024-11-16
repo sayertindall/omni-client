@@ -1,20 +1,19 @@
 "use client";
 
 import { Header } from "./Header";
-import { useApp } from "@/app/providers";
+import { useApp } from "@/app/context/AppContext";
 
 export function HeaderWrapper() {
   const { showRequirements, setShowRequirements, setSidePanelOpen } = useApp();
 
   const handleRequirementsClick = () => {
-    if (showRequirements) {
-      // If we're showing requirements, go back to article
-      setShowRequirements(false);
-    } else {
-      // If we're showing article, go to requirements
-      setShowRequirements(true);
-      setSidePanelOpen(false);
-    }
+    setShowRequirements(!showRequirements);
+    setSidePanelOpen(false);
+  };
+
+  const handleHomeClick = () => {
+    setShowRequirements(false);
+    setSidePanelOpen(false);
   };
 
   return (
@@ -23,6 +22,7 @@ export function HeaderWrapper() {
       showRequirements={showRequirements}
       onBackToArticle={handleRequirementsClick}
       setSidePanelOpen={setSidePanelOpen}
+      onHomeClick={handleHomeClick}
     />
   );
 } 

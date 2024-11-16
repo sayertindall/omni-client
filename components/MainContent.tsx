@@ -8,6 +8,7 @@ import { InfoBox } from "@/components/InfoBox";
 import { HighlightToggle } from "@/components/HighlightToggle";
 import { ArticleRenderer } from "@/components/ArticleRenderer";
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 interface MainContentProps {
     data: any;
     highlightEnabled: boolean;
@@ -22,7 +23,6 @@ interface MainContentProps {
           <div className="w-[400px] shrink-0">
             <InfoBox />
           </div>
-  
           <div className="flex-1">
             <div className="space-y-4">
               <div className="flex justify-end mr-[8em]">

@@ -12,15 +12,16 @@ import { SidePanel } from "@/components/SidePanel";
 import { RequirementViewer } from "@/components/ReqsView";
 import useSWR from "swr";
 import { EvaluationData } from "@/lib/eval";
+import { useApp } from "@/app/context/AppContext";
 
 export default function Page() {
+  const { showRequirements, setShowRequirements } = useApp();
   const [selectedText, setSelectedText] = useState<string | null>(null);
   const [selectedType, setSelectedType] = useState<
     "section" | "sentence" | "article" | null
   >(null);
   const [isSidePanelOpen, setSidePanelOpen] = useState(false);
   const [highlightEnabled, setHighlightEnabled] = useState(true);
-  const [showRequirements, setShowRequirements] = useState(false);
   const [focusedRequirement, setFocusedRequirement] = useState<string>();
   const [selectedEvaluation, setSelectedEvaluation] = useState<{
     type: "section" | "sentence" | "article" | null;
